@@ -1,0 +1,713 @@
+{
+  "pId": "LightSpeaker",
+  "title": "Light Speaker",
+  "manufacturer": "Company",
+  "manufacturerId": "transparent",
+  "image": "LightSpeaker.png",
+  "data": {
+    "d0_brand": "Company",
+    "d0_brand_image": "icons/manufacturer.png",
+    "d0_product_image": "products/LightSpeaker.png",
+    "d0_modelId": "Light Speaker",
+    "d0_serialNumber": "XXX XXX XXX",
+    "d0_manufacturingDate": null,
+    "d0_purchaseDate": null,
+    "d0_paidProducerResponsibilityFee": true,
+    "d1": null,
+    "d2": [
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Chemicals and substances",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "European Union"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Chemicals and substances",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "European Union"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Japan"
+
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "China"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Russia"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Singapore"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "United Kingdom"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "South Korea"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "United States"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "European Union"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "United States & Canada"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Taiwan"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Product Safety",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Australia & New Zealand"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Recycling",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "European Union"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Social Responsibility",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Global"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Social Responsibility",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Global"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Social Responsibility",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Global"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Social Responsibility",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Global"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Social Responsibility",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null,
+        "d2_region": "Global"
+      }
+      
+
+    ],
+    "d3": null,
+
+    "d4": [
+      {
+        "type": "frequency response",
+        "label": "Frequency response",
+        "value": "60Hz - 18kHz"
+      },
+      {
+        "type": "bluetooth version",
+        "label": "Bluetooth Version",
+        "value": "Bluetooth 5"
+      },
+      {
+        "type": "driver setup",
+        "label": "Driver Setup",
+        "value": "1 x 2.5″ full range driver, 1 x 3″ passive radiator "
+      },
+      {
+        "type": "inputs",
+        "label": "Inputs",
+        "value": "Line in 3,5mm, double mini-jack AUX cable included"
+      },
+      {
+        "type": "output power",
+        "label": "Output Power",
+        "value": "5 Watts"
+      },
+      {
+        "type": "storage",
+        "label": "Storage",
+        "value": "512 GB PCIe SSD OPAL2.0"
+      },
+      {
+        "type": "battery capacity",
+        "label": "Battery capacity",
+        "value": "3500 mAh"
+      },
+      {
+        "type": "battery life",
+        "label": "Battery Life",
+        "value": "10 h"
+      },
+      {
+        "type": "dimensions",
+        "label": "Dimensions",
+        "value": "Diameter: 105mm, Height: 160mm, with handle 214mm"
+      },
+      {
+        "type": "weight",
+        "label": "Weight",
+        "value": "0,6 kg"
+      },
+      {
+        "type": "weather resistance rating",
+        "label": "Weather Resistance Rating",
+        "value": "IPX2"
+      }
+    ],
+    "d5": null,
+    "d6": [
+      {
+      "type": "pcb",
+      "label": "PCB",
+      "value": 11.4
+    },
+    {
+      "type": "battery",
+      "label": "Battery",
+      "value": 2.86
+    },
+    {
+      "type": "plastic rubber",
+      "label": "Plastic & rubber",
+      "value": 0.63
+    },
+    {
+      "type": "glass",
+      "label": "Glass parts",
+      "value": 0.40
+    },
+    {
+      "type": "aluminium",
+      "label": "Aluminium parts",
+      "value": 0.20
+    },
+    {
+      "type": "driver",
+      "label": "Driver",
+      "value": 0.17
+    },
+    {
+      "type": "steel handle",
+      "label": "Steel handle",
+      "value": 0.11
+    },
+    {
+      "type": "fasteners",
+      "label": "Fasteners",
+      "value": 0.09
+    }
+    ],
+    "d7": null,
+    "d9": {
+      "d9_idleConsumption": null,
+      "d9_peakConsumption": null,
+      "d9_refConsumption": null
+    },
+    "d10": null,
+    "d11": [
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Hex screws for handle and dome",
+        "d11_part": "HSLS-0001",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Steel Handle",
+        "d11_part": "HSLS-0002",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Top Dome Grill",
+        "d11_part": "HSLS-0003",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Philips screws for driver",
+        "d11_part": "HSLS-0004",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "2,5″ Driver",
+        "d11_part": "HSLS-0005",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Reflector",
+        "d11_part": "HSLS-0006",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Baffle driver holder ring",
+        "d11_part": "HSLS-0007",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Glass tube",
+        "d11_part": "HSLS-0008",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Hex screws for bottom assembly",
+        "d11_part": "HSLS-0009",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Rubber foot",
+        "d11_part": "HSLS-0010",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Bottom cover",
+        "d11_part": "HSLS-0011",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Lithium battery 3500 mAh",
+        "d11_part": "HSLS-0012",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Philips screws for PCB assembly",
+        "d11_part": "HSLS-0013",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Philips screws for PCB mounting pillars",
+        "d11_part": "HSLS-0014",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Mainboard with CSR8670 SoC board",
+        "d11_part": "HSLS-0016",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "LED board with 13 diodes",
+        "d11_part": "HSLS-0017",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Keyboard with two plastic knobs",
+        "d11_part": "HSLS-0018",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "AUX board",
+        "d11_part": "HSLS-0019",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Bottom grill",
+        "d11_part": "HSLS-0020",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Passive radiator baffle with light diffuser",
+        "d11_part": "HSLS-0021",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Power adaptor",
+        "d11_part": "HSLS-0022",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "AC plug",
+        "d11_part": "HSLS-0023",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_value": "Type-C to USB-A cable",
+        "d11_part": "HSLS-0006",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      }
+    ],
+    "d12": null,
+    "d13": null,
+    "d14": [
+      {
+        "d14_typeOfRepair": "Battery Replacement",
+        "d14_difficulty": "Easy",
+        "d14_link": "https://www.ifixit.com/",
+        "d14_image": "battery-replacement.png"
+      }
+    ],
+    "d15": {
+      "d15_recycledMetals": 0,
+      "d15_postConsumerRecycledPlastic": 0,
+      "d15_postIndustryRecycledPlastic": 0
+    },
+    "d16": null,
+    "d17": [
+      {
+        "d17_contentType": "Metals",
+        "d17_name": "Carbon Steel",
+        "d17_amount": 83,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metals",
+        "d17_name": "Aluminium (AL5052)",
+        "d17_amount": 34,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metals",
+        "d17_name": "Stainless Steel 316 (X5CRNiMo18)",
+        "d17_amount": 11,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metals",
+        "d17_name": "Stainless Steel (SUS304)",
+        "d17_amount": 10,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metals",
+        "d17_name": "Brass (CuZn40Pb)",
+        "d17_amount": 10,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Rare Earth Metals",
+        "d17_name": "Neodymium (NdFeB)",
+        "d17_amount": 85,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastics",
+        "d17_name": "ABS (ABS-757)",
+        "d17_amount": 32,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastics",
+        "d17_name": "ABS (ABS-765A)",
+        "d17_amount": 25,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastics",
+        "d17_name": "Silicon rubber",
+        "d17_amount": 10,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Other",
+        "d17_name": "Borosilicate glass",
+        "d17_amount": 170,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Other",
+        "d17_name": "Lithium-ion (LiCoO2)",
+        "d17_amount": 62,
+        "d17_percentage": null
+      }
+    ],
+    "d18": {
+      "d18_rbaMembership": false,
+      "d18_codeOfConduct": "https://transpa.rent/en/about",
+      "d18_followUpPolicy": "https://transpa.rent/en/about"
+    },
+    "d20": null,
+    "d21": {
+      "d21_warrantyExpirationDate": "2023-09-25",
+      "d21_warrantyTime": "3 years"
+    },
+    "d24": null,
+    "d26": [
+      {
+      "d26_supplierName": "Chinese OEM",
+      "d26_supplierCountry": "China",
+      "d26_supplierCity": "Ganzhou",
+      "d26_supplierType": "Parts",
+      "d26_supplierTier": "Tier 2",
+      "d26_supplierOf": "LM317 voltage regulator",
+      "d26_latestAudit": "2019-04-02",
+      "d26_supplierRating": "2 stars",
+      "d26_image": "icons/distributor.png",
+      "d26LatLng": [25.836828, 114.9053189]
+    }
+  ]
+  }
+}

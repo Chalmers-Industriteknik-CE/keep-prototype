@@ -1,0 +1,132 @@
+@import "variables";
+@import url("https://use.typekit.net/bdv5igk.css");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "keep-icon-regular";
+  src: url("~@/assets/fonts/KeepIconRegular.woff2") format("woff2"),
+    url("~@/assets/fonts/KeepIconRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.fs-keep-icon-regular {
+  font-family: "keep-icon-regular";
+  line-height: 1;
+}
+
+.card-header-title {
+  font-family: acumin-pro, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+.text-body {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $text-primary;
+}
+
+.text-body-light {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $text-secondary;
+}
+
+.text-body-xl {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+  color: $text-primary;
+}
+
+.text-body-l {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-primary;
+}
+
+.text-xs {
+  font-family: acumin-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: $text-secondary;
+}
+
+.text-s {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text-primary;
+}
+.text-m {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: $text-primary;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text-secondary;
+  margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+//Card Styling
+.card {
+  border-radius: 16px;
+  box-shadow: 0 0.2px 1.6px rgba(0, 0, 0, 0.04),
+    0 1px 5.4px rgba(0, 0, 0, 0.06), 0 4px 24px rgba(0, 0, 0, 0.05);
+  width:100%;
+}
+
+.card-header-title {
+  padding-left: 24px;
+}
+.card-header {
+  box-shadow: none;;
+  margin-top: 0.5rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.columns {
+  margin: 0;
+}
+
+.column {
+  padding-left: 0;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+}

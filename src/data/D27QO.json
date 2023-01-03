@@ -1,0 +1,219 @@
+{
+  "pId": "D27QO",
+  "title": "Voxicon D27QO IPS Ergonomic",
+  "manufacturer": "Company",
+  "manufacturerId": "voxicon",
+  "image": "voxicon-d27qo.png",
+  "data": {
+    "d0_brand": "Company",
+    "d0_brand_image": "icons/manufacturer.png",
+    "d0_product_image": "products/voxicon-d27qo.png",
+    "d0_modelId": "D27QO",
+    "d0_serialNumber": null,
+    "d0_manufacturingDate": null,
+    "d0_purchaseDate": null,
+    "d0_paidProducerResponsibilityFee": true,
+    "d1": null,
+    "d2": [
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "complicance",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Certificate",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "complicance",
+        "d2_version": null,
+        "d2_registered": null,
+        "d2_expirationDate": null
+      }
+    ],
+    "d3": [
+      {
+        "d3_factoryId": 1,
+        "d3_factoryName": "KTC Huizhou ",
+        "d3_country": "China",
+        "d3_city": "Huizhou",
+        "d3_expectedWorkingTime": 60,
+        "d3_actualWorkingTime": 60
+      }
+    ],
+    "d4": [
+      {
+        "label": "Diagonal Scereen Size",
+        "value": "27"
+      },
+      {
+        "label": "Panel technology",
+        "value": "IPS"
+      },
+      {
+        "label": "Resolution",
+        "value": "1920 x 1080"
+      },
+      {
+        "label": "Response Time",
+        "value": "2 ms"
+      },
+      {
+        "label": "Interface Type",
+        "value": "HDMI, VGA (HD-15)"
+      },
+      {
+        "label": "LCD Backlight Technology",
+        "value": "LED backlight"
+      },
+      {
+        "label": "Display Image Aspect Ratio",
+        "value": "16:9"
+      },
+      {
+        "label": "Monitor Refresh Rate",
+        "value": "60 Hz"
+      },
+      {
+        "label": "Ergonomics",
+        "value": "Tilt"
+      },
+      {
+        "label": "OSD Languages",
+        "value": "English"
+      },
+      {
+        "label": "Colour Category",
+        "value": "Black"
+      },
+      {
+        "label": "Cables Included",
+        "value": "1 x HDMI cable\n1 x power adapter"
+      },
+      {
+        "label": "VESA mount",
+        "value": "100 x 100 mm"
+      },
+      {
+        "label": "Energy Class",
+        "value": "Class A"
+      },
+      {
+        "label": "Energy Consumption per Year",
+        "value": "44 kWh"
+      },
+      {
+        "label": "Power Consumption (On mode)",
+        "value": "30 W"
+      },
+      {
+        "label": "Nominal Voltage AC",
+        "value": "AC 120/230 V"
+      },
+      {
+        "label": "Frequency Required",
+        "value": "50/60 Hz"
+      }
+    ],
+    "d5": null,
+    "d6": null,
+    "d7": null,
+    "d9": {
+      "d9_idleConsumption": 30,
+      "d9_peakConsumption": null,
+      "d9_refConsumption": 100
+    },
+    "d10": [
+      {
+        "d10_factoryId": "1",
+        "d10_factoryName": "Huizhou Electronics",
+        "d10_factoryCountry": "China",
+        "d10_factoryCity": "Huizhou",
+        "d10_factoryAddress": null,
+        "d10_medianSalary": null,
+        "d10_25thPercentileSalary": null,
+        "d10_75thPercentileSalary": null,
+        "d10_minimumWage": 380
+      }
+    ],
+    "d11": [
+      {
+        "d11_manufacturingDate": "2019-04-12",
+        "d11_icon": "parts/display-icon.png",
+        "d11_part": "Display",
+        "d11_value": "27 LCD",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": "2019-04-12",
+        "d11_icon": "parts/battery-icon.png",
+        "d11_part": "Power adapter",
+        "d11_value": "12V",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": "12V",
+        "d11_current": "4.5A",
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": "2019-04-12",
+        "d11_icon": "parts/cpu-icon.png",
+        "d11_part": "Motherboard",
+        "d11_value": "-",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      }
+    ],
+    "d12": null,
+    "d13": null,
+    "d14": null,
+    "d15": null,
+    "d16": null,
+    "d17": null,
+    "d18": {
+      "d18_rbaMembership": true,
+      "d18_codeOfConduct": "https://www.dustingroup.com/en/business-ethics-and-anti-corruption",
+      "d18_followUpPolicy": "https://www.dustingroup.com/en/responsible-manufacturing"
+    },
+    "d20": null,
+    "d21": {
+      "d21_warrantyExpirationDate": "2020-11-15",
+      "d21_warrantyTime": "3 years"
+    },
+    "d26": [
+      {
+        "d26_supplierName": "Huizhou Electronics",
+        "d26_supplierCountry": "China",
+        "d26_supplierCity": "Huizhou",
+        "d26_supplierType": "Monitor supplier",
+        "d26_supplierTier": "Tier 2",
+        "d26_supplierOf": "Complete product",
+        "d26_latestAudit": "2020-05-15",
+        "d26_supplierRating": "Approved",
+        "d26_image": "icons/certifier.png"
+      }
+    ]
+  }
+}

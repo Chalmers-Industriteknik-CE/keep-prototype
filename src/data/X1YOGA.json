@@ -1,0 +1,227 @@
+{
+  "pId": "X1YOGA",
+  "title": "X1 Yoga 2nd Gen",
+  "manufacturer": "Company",
+  "manufacturerId": "lenovo",
+  "image": "lenovo_x1yoga.png",
+  "data": {
+    "d0_brand": "Company",
+    "d0_brand_image": "icons/manufacturer.png",
+    "d0_product_image": "products/lenovo_x1yoga.png",
+    "d0_modelId": "X1 Yoga 2nd Gen (002JMS)",
+    "d0_serialNumber": "R90PXXVE",
+    "d0_manufacturingDate": null,
+    "d0_purchaseDate": "2017-09-26",
+    "d0_paidProducerResponsibilityFee": true,
+    "d1": null,
+    "d2": [
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Certificate",
+        "d2_version": null,
+        "d2_registered": "31 May 2019",
+        "d2_expirationDate": "31 May 2021"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Programme",
+        "d2_version": 6,
+        "d2_registered": "1 June, 2019",
+        "d2_expirationDate": "1 June, 2021"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Compliance",
+        "d2_version": null,
+        "d2_registered": "2 June, 2019",
+        "d2_expirationDate": "2 June, 2021"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Compliance",
+        "d2_version": null,
+        "d2_registered": "3 June, 2019",
+        "d2_expirationDate": "3 June, 2021"
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "complicance",
+        "d2_version": null,
+        "d2_registered": "4 June, 2019",
+        "d2_expirationDate": "4 June, 2021"
+      }
+    ],
+    "d3": null,
+
+    "d4": [
+      {
+        "type": "processer",
+        "label": "Processer",
+        "value": "Intel Core i7-7600U"
+      },
+      {
+        "type": "operatingSystem",
+        "label": "Operating System",
+        "value": "Windows 10 Pro"
+      },
+      {
+        "type": "display",
+        "label": "Display",
+        "value": "14” WQHD (2560 x 1440) IPS, touchscreen, 300 nits"
+      },
+      {
+        "type": "memory",
+        "label": "Memory",
+        "value": "16 GB LPDDR3 1866MHz"
+      },
+      {
+        "type": "graphics",
+        "label": "Graphics",
+        "value": "Integrated Intel HD Graphics 620"
+      },
+      {
+        "type": "storage",
+        "label": "Storage",
+        "value": "512 GB PCIe SSD OPAL2.0"
+      },
+      {
+        "type": "battery",
+        "label": "Battery",
+        "value": "Up to 15 hours"
+      },
+      {
+        "type": "security",
+        "label": "Security",
+        "value": "dTPM 2.0\nTouch Fingerprint Reader"
+      },
+      {
+        "type": "audio",
+        "label": "Audio",
+        "value": "Dolby Audio Premium"
+      },
+      {
+        "type": "camera",
+        "label": "Camera",
+        "value": "IR Camera"
+      },
+      {
+        "type": "dimensions",
+        "label": "Dimensions",
+        "value": "333 x 229 x 17.05 mm"
+      },
+      {
+        "type": "weight",
+        "label": "Weight",
+        "value": "1,42 kg"
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "value": "Black"
+      },
+      {
+        "type": "Ports",
+        "label": "Ports",
+        "value": "2 x USB 3.1 (Gen 2) Type-C\n2 x USB 3.1 (Gen 1)** (1 always on)\nHDMI 1.4\nNetwork extension for Ethernet\nHeadphone / Mic combo"
+      },
+      {
+        "type": "connectivity",
+        "label": "Connectivity",
+        "value": "Intel 8265 802.11AC\nWWAN: Sierra Wireless 4G\nBluetooth 4.1 with vPro"
+      }
+    ],
+    "d5": null,
+    "d6": null,
+    "d7": null,
+    "d9": {
+      "d9_idleConsumption": 4.14,
+      "d9_peakConsumption": 65,
+      "d9_refConsumption": 100
+    },
+    "d10": null,
+    "d11": [
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/display-icon.png",
+        "d11_part": "LCD Display",
+        "d11_value": "14 Inches, HD, TP",
+        "d11_screenSize": 14,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/camera.png",
+        "d11_part": "Camera",
+        "d11_value": "720p",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/cpu-icon.png",
+        "d11_part": "System board",
+        "d11_value": "WIN i7-7500U",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/battery-icon.png",
+        "d11_part": "Internal battery",
+        "d11_value": "56Wh LiIon",
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      }
+    ],
+    "d12": null,
+    "d13": null,
+    "d14": [
+      {
+        "d14_typeOfRepair": "Hardware Maintenance Manual",
+        "d14_difficulty": "Medium",
+        "d14_link": "https://download.lenovo.com/pccbbs/mobiles_pdf/tp_x1yoga_2ndgen_hmm_v2.pdf",
+        "d14_image": "lenovo-manual.png"
+      }
+    ],
+    "d15": null,
+    "d16": null,
+    "d17": null,
+    "d18": {
+      "d18_rbaMembership": true,
+      "d18_codeOfConduct": "https://www.lenovo.com/us/en/sustainability-resources",
+      "d18_followUpPolicy": "https://www.lenovo.com/us/en/social_responsibility/2018-19_Sustainability_Report.pdf"
+    },
+    "d20": null,
+    "d21": {
+      "d21_warrantyExpirationDate": "2020-09-25",
+      "d21_warrantyTime": "3 years"
+    },
+    "d24": null,
+    "d26": null
+  }
+}

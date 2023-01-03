@@ -1,0 +1,240 @@
+{
+  "pId": "CO443726",
+  "title": "Kaffebryggare med timer",
+  "manufacturer": "Company",
+  "manufacturerId": "clasohlson",
+  "image": "CO443726.png",
+  "data": {
+    "d0_brand": "Company",
+    "d0_brand_image": "icons/manufacturer.png",
+    "d0_product_image": "products/CO443726.png",
+    "d0_modelId": "443726000",
+    "d0_serialNumber": null,
+    "d0_manufacturingDate": null,
+    "d0_purchaseDate": null,
+    "d0_paidProducerResponsibilityFee": true,
+    "d1": null,
+    "d2": [
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Certificate",
+        "d2_version": null,
+        "d2_registered": "2019-06-21",
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Certificate",
+        "d2_version": null,
+        "d2_registered": "2019-07-02",
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Complicance",
+        "d2_version": null,
+        "d2_registered": "2019-06-14",
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "Test Report",
+        "d2_version": null,
+        "d2_registered": "2019-05-30",
+        "d2_expirationDate": null
+      },
+      {
+        "d2_name": "Company",
+        "d2_image": "icons/certifier.png",
+        "d2_type": "test report",
+        "d2_version": null,
+        "d2_registered": "2019-07-02",
+        "d2_expirationDate": null
+      }
+    ],
+    "d3": null,
+    "d4": [
+      {
+        "label": "Automatic shut off",
+        "value": "Yes"
+      },
+      {
+        "label": "Removable filter holder",
+        "value": "Yes"
+      },
+      {
+        "label": "Filter type",
+        "value": "1x4"
+      },
+      {
+        "label": "Capacity",
+        "value": "4.5 L"
+      },
+      {
+        "label": "Level meter water tank",
+        "value": "Yes"
+      },
+      {
+        "label": "Reusable coffee filter included",
+        "value": "Yes"
+      },
+      {
+        "label": "Effect",
+        "value": "900W"
+      },
+      {
+        "label": "Width",
+        "value": "172 mm"
+      },
+      {
+        "label": "Height",
+        "value": "367 mm"
+      },
+      {
+        "label": "Depth",
+        "value": "279 mm"
+      },
+      {
+        "label": "Colour",
+        "value": "Metal"
+      },
+      {
+        "label": "Package Size",
+        "value": "41.4 x 30 x 21.2 cm"
+      },
+      {
+        "label": "Weight of package",
+        "value": "2.4 kg"
+      }
+    ],
+    "d5": null,
+    "d6": null,
+    "d7": {
+      "d7_purchaseDate": "2019-06-20",
+      "d7_purchaseTime": "17:43",
+      "d7_seller": "Company",
+      "d7_sellerImage": "icons/seller.png",
+      "d7_amount": "399 SEK"
+    },
+    "d9": null,
+    "d10": null,
+    "d11": [
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/control-panel.png",
+        "d11_part": "Control Panel",
+        "d11_value": null,
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/glass-jug.png",
+        "d11_part": "Glass Jug",
+        "d11_value": null,
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      },
+      {
+        "d11_manufacturingDate": null,
+        "d11_icon": "parts/power-cord.png",
+        "d11_part": "Power Cord",
+        "d11_value": null,
+        "d11_screenSize": null,
+        "d11_dimensions": null,
+        "d11_voltage": null,
+        "d11_current": null,
+        "d11_energyConsumption": null,
+        "d11_clockSpeed": null,
+        "d11_cost": null
+      }
+    ],
+    "d12": null,
+    "d13": null,
+    "d14": null,
+    "d15": {
+      "d15_recycledMetals": 0,
+      "d15_postConsumerRecycledPlastic": 0,
+      "d15_postIndustryRecycledPlastic": 0,
+      "d15_notApplicable": true,
+      "d15_notApplicableDescription": "Recycled content not allowed because of food safety legislation."
+    },
+    "d16": null,
+    "d17": [
+      {
+        "d17_contentType": "Plastic",
+        "d17_name": "Polypropylene (PP)",
+        "d17_amount": 1034,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metal",
+        "d17_name": "Stainless Steel (SUS304)",
+        "d17_amount": 379,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Glass",
+        "d17_name": "Glass",
+        "d17_amount": 304,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metal",
+        "d17_name": "Aluminium (AL6063)",
+        "d17_amount": 122,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Metal",
+        "d17_name": "Steel (SECC)",
+        "d17_amount": 34.5,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastic",
+        "d17_name": "Silicone",
+        "d17_amount": 25.9,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastic",
+        "d17_name": "Polycarbonate (PC)",
+        "d17_amount": 4.5,
+        "d17_percentage": null
+      },
+      {
+        "d17_contentType": "Plastic",
+        "d17_name": "ABS 750SW",
+        "d17_amount": 2.5,
+        "d17_percentage": null
+      }
+    ],
+    "d18": {
+      "d18_rbaMembership": false,
+      "d18_codeOfConduct": "https://about.clasohlson.com/en/about-us/governance-concept-spirit/governance-policies-guidelines/code-of-business-ethics/",
+      "d18_followUpPolicy": "https://about.clasohlson.com/en/story/monitoring-health-rights-and-environment-in-our-supply-chain/"
+    },
+    "d20": null,
+    "d21": {
+      "d21_warrantyExpirationDate": "2021-05-15",
+      "d21_warrantyTime": "2 years"
+    },
+    "d24": null,
+    "d26": null
+  }
+}

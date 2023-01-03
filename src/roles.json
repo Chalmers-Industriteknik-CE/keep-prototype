@@ -1,0 +1,629 @@
+{
+  "producer": {
+    "title": "Producer",
+    "icon": "!producer",
+    "image": "producer.svg",
+    "annat": "Random text about producer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [
+          20
+        ],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [
+          17
+        ],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [
+          11
+        ],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [
+          26
+        ],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [
+          18,
+          13,
+          3,
+          10
+        ],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          9,
+          15,
+          16
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [
+          24
+        ],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [
+          14
+        ],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [
+          2
+        ],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  },
+  "certifier": {
+    "title": "Certifier",
+    "icon": "!certifier",
+    "image": "certifier.svg",
+    "annat": "Random text about producer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [
+          11
+        ],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          16,
+          12,
+          19
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  },
+  "consumer": {
+    "title": "Consumer",
+    "icon": "!user",
+    "image": "consumer.svg",
+    "annat": "Random text about consumer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22,
+          0,
+          7
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [
+          20
+        ],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [
+          18,
+          13,
+          3,
+          10
+        ],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          9,
+          15
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [
+          24
+        ],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [
+          5,
+          8,
+          14,
+          23
+        ],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          25,
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [
+          2
+        ],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  },
+  "support": {
+    "title": "Support",
+    "icon": "!service",
+    "image": "service.svg",
+    "annat": "Random text about producer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22,
+          0,
+          7
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [
+          20
+        ],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [
+          11
+        ],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          9,
+          15,
+          16
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [
+          14,
+          8
+        ],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  },
+  "remanufacturer": {
+    "title": "Remanufacturer",
+    "icon": "!remanufacturer",
+    "image": "remanufacturer.svg",
+    "annat": "Random text about producer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [
+          20
+        ],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [
+          17
+        ],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [
+          11
+        ],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [
+          18,
+          13,
+          3,
+          10
+        ],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          15,
+          16
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [
+          24
+        ],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [
+          14,
+          5
+        ],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [
+          2
+        ],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  },
+  "materialrecycler": {
+    "title": "Material Recycler",
+    "icon": "!recycler",
+    "image": "recycler.svg",
+    "annat": "Random text about producer",
+    "categories": [
+      {
+        "id": 0,
+        "categoryTitle": "Overview",
+        "cards": [
+          21,
+          22
+        ],
+        "categoryIcon": "!overview"
+      },
+      {
+        "id": 1,
+        "categoryTitle": "Tech Specs",
+        "cards": [
+          4
+        ],
+        "categoryIcon": "!specs"
+      },
+      {
+        "id": 2,
+        "categoryTitle": "Product History",
+        "cards": [
+          20
+        ],
+        "categoryIcon": "!history"
+      },
+      {
+        "id": 3,
+        "categoryTitle": "Materials",
+        "cards": [
+          17
+        ],
+        "categoryIcon": "!materials"
+      },
+      {
+        "id": 4,
+        "categoryTitle": "Parts",
+        "cards": [
+          11
+        ],
+        "categoryIcon": "!parts"
+      },
+      {
+        "id": 5,
+        "categoryTitle": "Suppliers",
+        "cards": [],
+        "categoryIcon": "!suppliers"
+      },
+      {
+        "id": 6,
+        "categoryTitle": "Social Impact",
+        "cards": [],
+        "categoryIcon": "!social"
+      },
+      {
+        "id": 7,
+        "categoryTitle": "Environmental Impact",
+        "cards": [
+          6,
+          15,
+          16
+        ],
+        "categoryIcon": "!environment"
+      },
+      {
+        "id": 8,
+        "categoryTitle": "Usage",
+        "cards": [
+          24
+        ],
+        "categoryIcon": "!usage"
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Support",
+        "cards": [
+          14,
+          5
+        ],
+        "categoryIcon": "!support"
+      },
+      {
+        "id": 10,
+        "categoryTitle": "End of Use",
+        "cards": [
+          1
+        ],
+        "categoryIcon": "!endofuse"
+      },
+      {
+        "id": 11,
+        "categoryTitle": "Certifications",
+        "cards": [],
+        "categoryIcon": "!certificate"
+      }
+    ]
+  }
+}

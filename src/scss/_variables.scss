@@ -1,0 +1,90 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+:root {
+  --vh: 1vh;
+}
+
+// Set your colors
+$primary: #2259f0;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+
+$text-primary: #181619;
+$text-secondary: #444c53;
+
+$background: #edeff4;
+$footer-background-color: #181619;
+
+$button-primary: #181619;
+$button-secondary: white;
+$button-primary-hover: #2a282b;
+$button-secondary-hover: white;
+
+$progress-bar-background-color: #e7ecf3;
+
+$navHeight: 54px;
+
+$mobileMenuBreakpoint: 1023px;
+$tabletBreakpoint: 768px;
+$colors: (
+  "white": (
+    $white,
+    $black,
+  ),
+  "black": (
+    $black,
+    $white,
+  ),
+  "light": (
+    $light,
+    $light-invert,
+  ),
+  "dark": (
+    $dark,
+    $dark-invert,
+  ),
+  "primary": (
+    $primary,
+    $primary-invert,
+  ),
+  "info": (
+    $info,
+    $info-invert,
+  ),
+  "success": (
+    $success,
+    $success-invert,
+  ),
+  "warning": (
+    $warning,
+    $warning-invert,
+  ),
+  "danger": (
+    $danger,
+    $danger-invert,
+  ),
+  "twitter": (
+    $twitter,
+    $twitter-invert,
+  ),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$carousel-indicator-color: #797c80;
+$carousel-indicator-background: #d7d9db;
+$carousel-indicator-border: transparent;
+
+//Sidemenu
+$menu-item-active-background-color: transparent;
+$menu-label-color: $text-primary;
+$menu-item-active-color: $primary;
+$menu-label-color: $text-primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
