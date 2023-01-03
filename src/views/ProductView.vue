@@ -12,9 +12,9 @@
             <router-link :to="{ path: '/' }">
               <img src="@/assets/keep-logo.png" alt="keep-logo" />
             </router-link>
-            <router-link :to="{ path: '/' }">
+            <a :href="'https://github.com/Chalmers-Industriteknik-CE/keep-prototype'" target="_blank">
               <img src="@/assets/logos/github-mark.svg" alt="github" />
-            </router-link>
+            </a>
           </div>
           <div
             class="item"
