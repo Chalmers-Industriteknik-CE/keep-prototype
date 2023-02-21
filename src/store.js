@@ -10,10 +10,10 @@ import LightSpeaker from "./data/LightSpeaker.json";
 const parseImgPath = (image) => require(`@/assets/${image}`);
 const productData = {
   ...products,
-  D27QO,
-  CO443726,
-  X1YOGA,
-  LightSpeaker,
+  // D27QO,
+  // CO443726,
+  // X1YOGA,
+  // LightSpeaker,
 };
 
 Object.values(productData).map((product) => {

@@ -10,6 +10,7 @@
         <CardDeviceStatus></CardDeviceStatus>
         <CardCarbonFootprint></CardCarbonFootprint>
         <CardProductInformation></CardProductInformation>
+        <CardCustom></CardCustom>
         <CardProductUsage></CardProductUsage>
       </div>
       <div class="column">
@@ -66,6 +67,7 @@ import CardServiceRequest from "@/components/CardServiceRequest.vue";
 import CardProductUsage from "@/components/CardProductUsage.vue";
 import CardNearestCollectors from "@/components/CardNearestCollectors.vue";
 import CardSuppliers from "@/components/CardSuppliers.vue";
+import CardCustom from "@/components/CardCustom.vue";
 
 export default {
   name: "Elements",
@@ -96,7 +98,8 @@ export default {
     CardServiceRequest,
     CardProductUsage,
     CardNearestCollectors,
-    CardSuppliers
+    CardSuppliers,
+    CardCustom
   }
 };
 </script>

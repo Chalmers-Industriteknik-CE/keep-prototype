@@ -2,6 +2,7 @@
   <div class="modal-card onboarding-modal" style="width: auto">
     <section class="modal-card-body">
       <img v-if="imageData" :src="imageData" alt />
+      <p>USN: {{ usn }}</p>
       <a :href="imageData" :download="link + '.png'" class="download-link">
         <b-icon pack="fas" icon="download" size="is-small"></b-icon>
       </a>
@@ -14,7 +15,7 @@ import QRCode from "qrcode";
 
 export default {
   name: "QrComponent",
-  props: { link: String },
+  props: { usn: String, link: String },
   data: () => {
     return {
       imageData: null,
