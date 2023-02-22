@@ -137,7 +137,7 @@ export default {
       return this.product.manufacturerId;
     },
     usn(){
-      return this.product.usn;
+      return this.product.data.usn;
     },
     gUIdeActive: sync("gUIdeActive"),
     currentCategory: sync("currentCategory"),

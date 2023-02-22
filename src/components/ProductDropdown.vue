@@ -39,8 +39,8 @@ export default {
     parseItem(product, key) {
       return {
         key,
-        title: product.title,
-        subTitle: product.manufacturer,
+        title: product.data.usn,
+        subTitle: product.title,
         image: require(`@/assets/products/${product.image}`),
       };
     },

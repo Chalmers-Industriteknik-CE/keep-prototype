@@ -28,35 +28,21 @@
         <div class="columns">
           <div class="column">
             <DataItem
-              label="Manufactured"
-              :data="productData.d0_manufacturingDate"
-            >{{ productData.d0_manufacturingDate }}</DataItem>
+              label="USN"
+              :data="productData.usn"
+            >{{ productData.usn }}</DataItem>
           </div>
           <div class="column">
             <DataItem
-              label="Purchased"
-              :data="productData.d0_purchaseDate"
-            >{{ productData.d0_purchaseDate }}</DataItem>
+                label="DID"
+                :data="productData.did"
+            >{{ productData.did }}</DataItem>
           </div>
         </div>
-
-        <div class="columns">
-          <div class="column">
-            <DataItem label="Certification" :data="productData.d2">
-              <span v-if="productData.d2">{{productData.d2.length}} active certifications</span>
-              <span v-else>-</span>
-            </DataItem>
-          </div>
-          <div class="column">
-            <DataItem
-              label="Producer Responsibility"
-              :data="productData.d0_paidProducerResponsibilityFee"
-            >
-              <img class="logo-image" src="@/assets/icons/producer.png" alt="Producer" />
-              <span>Company</span>
-            </DataItem>
-          </div>
-        </div>
+        <DataItem
+            label="Checksum"
+            :data="productData.checksum"
+        >{{ productData.checksum }}</DataItem>
       </div>
     </div>
   </div>

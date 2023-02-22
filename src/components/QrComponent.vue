@@ -1,8 +1,8 @@
 <template>
   <div class="modal-card onboarding-modal" style="width: auto">
-    <section class="modal-card-body">
-      <img v-if="imageData" :src="imageData" alt />
-      <p>USN: {{ usn }}</p>
+    <section class="modal-card-body" style="text-align: center">
+      <img v-if="imageData" :src="imageData" alt style="width: 50%;" />
+      <p style="text-align: center;font-weight: bold;font-size: 1.5em;margin-bottom: 1em;">USN: {{ usn }}</p>
       <a :href="imageData" :download="link + '.png'" class="download-link">
         <b-icon pack="fas" icon="download" size="is-small"></b-icon>
       </a>
