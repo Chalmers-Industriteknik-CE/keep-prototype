@@ -58,6 +58,7 @@
     <CardProductHistory v-if="card == 20" :cardData="productData.d20" />
     <CardProductInformation v-if="card == 21" :productData="productData" />
     <CardKeepScore v-if="card == 22" :cardData="productData.d22" />
+    <CardCustom v-if="card == 27" :cardData="productData.d27" />
     <CardServiceRequest v-if="card == 23" :cardData="productData.d23" />
     <CardProductUsage v-if="card == 24" :cardData="productData.d24" />
     <CardNearestCollectors v-if="card == 25" :cardData="productData.d25" />
@@ -93,6 +94,7 @@ import CardServiceRequest from "@/components/CardServiceRequest.vue";
 import CardProductUsage from "@/components/CardProductUsage.vue";
 import CardNearestCollectors from "@/components/CardNearestCollectors.vue";
 import CardSuppliers from "@/components/CardSuppliers.vue";
+import CardCustom from "@/components/CardCustom.vue";
 
 import DifficultyRating from "@/components/DifficultyRating.vue";
 
@@ -137,6 +139,7 @@ export default {
         24: "is-4",
         25: "is-12",
         26: "is-12",
+        27: "is-4",
       },
       cardDescription: {
         0: {
@@ -349,6 +352,14 @@ export default {
             "A large number of parts and materials make this difficult. Could be done on the Tier 1 level and for critical components.",
           difficultyScore: 2,
         },
+        27: {
+          title: "pNFT details",
+          description:
+            "pNFT details",
+          difficulty:
+            "pNFT details",
+          difficultyScore: 1,
+        },
       },
     };
   },
@@ -390,6 +401,7 @@ export default {
     CardProductUsage,
     CardNearestCollectors,
     CardSuppliers,
+    CardCustom,
   },
 };
 </script>

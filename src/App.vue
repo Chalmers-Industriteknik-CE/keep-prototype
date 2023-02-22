@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <GUIde v-if="gUIdeActive" />
+<!--    <GUIde v-if="gUIdeActive" />-->
     <router-view></router-view>
 
     <b-modal
@@ -30,7 +30,7 @@ Vue.use(Vuex);
 export default {
   name: "App",
   components: {
-    GUIde,
+    // GUIde,
     Onboarding,
   },
   data: function () {

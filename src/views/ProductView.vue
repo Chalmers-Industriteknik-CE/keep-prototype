@@ -79,7 +79,7 @@
         aria-role="dialog"
         aria-modal
       >
-        <QrComponent :link="getProductQrLink()" />
+        <QrComponent :usn="usn" :link="getProductQrLink()" />
       </b-modal>
     </div>
   </div>
@@ -135,6 +135,9 @@ export default {
     },
     manufacturerId(){
       return this.product.manufacturerId;
+    },
+    usn(){
+      return this.product.data.usn;
     },
     gUIdeActive: sync("gUIdeActive"),
     currentCategory: sync("currentCategory"),

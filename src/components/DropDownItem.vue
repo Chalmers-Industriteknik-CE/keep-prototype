@@ -2,7 +2,7 @@
   <div class="dropdown-item">
     <img v-if="item.image" :src="item.image" />
     <div>
-      <label>{{ item.title }}</label>
+      <label style="font-weight: bold ;">{{ item.title }}</label>
       <div v-if="item.subTitle">{{ item.subTitle }}</div>
     </div>
   </div>
