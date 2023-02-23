@@ -65,8 +65,9 @@ export default {
 @import "@/scss/global.scss";
 .image.product {
   width: 60%;
+  max-width: 200px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .logo-image {

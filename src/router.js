@@ -10,7 +10,7 @@ import ProductView from "@/views/ProductView.vue";
 
 const routes = [
   { path: "/start", component: Start },
-  { path: "/", component: StartPage },
+  { path: "/", redirect: '/start' },
   { name: 'product', path: "/product/:id", component: ProductView },
   {
     name: 'qr', path: "/qr/*", redirect: to => {

@@ -1,5 +1,5 @@
 <template>
-  <button :class="['keep-button', type, block ? ' block':'', size]">
+  <button :class="['keep-button', type, block ? ' block':'', size]" @click="onclick">
     <span
       v-if="icon && iconPosition === 'left'"
       class="button-icon fs-keep-icon-regular left"
@@ -87,6 +87,7 @@ export default {
     type: { type: String, default: "is-primary" },
     block: { type: Boolean, default: false },
     size: { type: String, default: "is-normal" },
+    onclick: {type: Function, default: function() {}},
   },
   data() {
     return {};
