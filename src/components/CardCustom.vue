@@ -7,7 +7,7 @@
     <div class="card-content">
       <label for="account" style="display:block;margin-bottom: 0.5em;">Import Private Key</label>
       <input id="account" class="keep-input" type="text" name="account" style="width: 100%;" placeholder="Enter Key">
-      <Button text="Import" :onclick="doImport" block />
+      <Button text="Import" :isLoading="isLoading"  :onclick="doImport" block />
       <p>Import the private key to connect this demo to the Decentralized Registry storing Digital Product Passports.</p>
     </div>
   </div>
@@ -19,6 +19,11 @@ export default {
   name: "CardCustom",
   components: {Button },
   props: { cardData: Array },
+  data() {
+    return {
+      isLoading: false
+    }
+  },
   computed: {
     usn() {
       return '';
@@ -29,10 +34,13 @@ export default {
   },
   methods: {
     doImport() {
-      this.$router.push({
-        name: 'product',
-        params: { id: '123456' },
-      });
+      this.isLoading = true;
+      setTimeout(() => {
+        this.$router.push({
+          name: 'product',
+          params: { id: '123456' },
+        });
+      }, 1000);
     }
   }
 };
