@@ -493,5 +493,500 @@
         }
       ]
     }
+  },
+  "654321": {
+    "pId": "XYZ123",
+    "title": "10a8s0mf00",
+    "manufacturer": "lenovo",
+    "manufacturerId": "lenovo",
+    "image": "s4s76851.jpeg",
+    "data": {
+      "usn": "zGSx-D5Eu",
+      "did": "did:obada:1bbc21e7aae8e4c9bf7a37cf574bf1f1c43de4b2277574c333a10f8590974aca",
+      "checksum": "168809c1aa733c6393c5ad8dc788007a11620ee4f381fb142ca03b982491f061",
+      "d0_brand": "lenovo",
+      "d0_brand_image": "logos/lenovo.png",
+      "d0_product_image": "products/s4s76851.jpeg",
+      "d0_modelId": "10a8s0mf00",
+      "d0_serialNumber": "s4s76851",
+      "d0_manufacturingDate": "2019-05-24",
+      "d0_purchaseDate": "2019-06-20",
+      "d0_paidProducerResponsibilityFee": true,
+      "d1": [
+        {
+          "d1_reseller": "Company",
+          "d1_resellerImage": "icons/reseller.png",
+          "d1_price": 4400
+        },
+        {
+          "d1_reseller": "Company",
+          "d1_resellerImage": "icons/reseller.png",
+          "d1_price": 4300
+        }
+      ],
+      "d2": [
+        {
+          "d2_name": "Company",
+          "d2_image": "icons/certifier.png",
+          "d2_type": "Certificate",
+          "d2_version": null,
+          "d2_registered": "31 May 2019",
+          "d2_expirationDate": "31 May 2022"
+        },
+        {
+          "d2_name": "Company",
+          "d2_image": "icons/certifier.png",
+          "d2_type": "Certificate",
+          "d2_version": 6,
+          "d2_registered": "14 June, 2019",
+          "d2_expirationDate": "31 May 2022"
+        },
+        {
+          "d2_name": "Company",
+          "d2_image": "icons/certifier.png",
+          "d2_type": "Certificate",
+          "d2_version": null,
+          "d2_registered": "31 May 2019",
+          "d2_expirationDate": "31 May 2022"
+        },
+        {
+          "d2_name": "Company",
+          "d2_image": "icons/certifier.png",
+          "d2_type": "Certificate",
+          "d2_version": null,
+          "d2_registered": "31 May 2019",
+          "d2_expirationDate": "31 May 2022"
+        }
+      ],
+      "d3": [
+        {
+          "d3_factoryId": "china1",
+          "d3_factoryName": "Assembly",
+          "d3_country": "China",
+          "d3_city": "Wuhan",
+          "d3_expectedWorkingTime": 44,
+          "d3_actualWorkingTime": 56
+        }
+      ],
+      "d4": [
+        {
+          "type": "processer",
+          "label": "Processer",
+          "value": "Intel Core i5-8250U"
+        },
+        {
+          "type": "operatingSystem",
+          "label": "Operating System",
+          "value": "Windows 10 Pro"
+        },
+        {
+          "type": "display",
+          "label": "Display",
+          "value": "14” WQHD (2560 x 1440) IPS, anti-glare, 300 nits"
+        },
+        {
+          "type": "memory",
+          "label": "Memory",
+          "value": "16 GB LPDDR3 2133MHz"
+        },
+        {
+          "type": "graphics",
+          "label": "Graphics",
+          "value": "Integrated Intel UHD 620"
+        },
+        {
+          "type": "storage",
+          "label": "Storage",
+          "value": "1 TB PCIe SSD"
+        },
+        {
+          "type": "battery",
+          "label": "Battery",
+          "value": "18.3 hours on 51 Whr,\nincludes Rapid Charge Technology"
+        },
+        {
+          "type": "security",
+          "label": "Security",
+          "value": "Fast Identity Online (FIDO)\nMatch-on-Chip Fingerprint Reader\n dTPM 2.0 chip\nThinkShutter camera cover"
+        },
+        {
+          "type": "audio",
+          "label": "Audio",
+          "value": "Dolby Atmos Speaker System\n 4 x 360-degree far-field microphones"
+        },
+        {
+          "type": "camera",
+          "label": "Camera",
+          "value": "720p HD Camera with microphone\n IR & 720p HD Camera with microphone"
+        },
+        {
+          "type": "dimensions",
+          "label": "Dimensions",
+          "value": "323 x 217 x 14.95 mm"
+        },
+        {
+          "type": "weight",
+          "label": "Weight",
+          "value": "1,08 kg"
+        },
+        {
+          "type": "color",
+          "label": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "keyboard",
+          "label": "Keyboard",
+          "value": "Spill resistant, Backlit with white LED lighting"
+        },
+        {
+          "type": "Ports",
+          "label": "Ports",
+          "value": "2 x USB 3.1 (Gen 2) Type-C\n2 x USB 3.1 (Gen 1)** (1 always on)\nHDMI 1.4\nNetwork extension for Ethernet\nHeadphone / Mic combo"
+        },
+        {
+          "type": "connectivity",
+          "label": "Connectivity",
+          "value": "Network extension for Ethernet\nWLAN: Intel Dual-Band 9560 802.11 AC\nBluetooth 5.0"
+        },
+        {
+          "type": "inTheBox",
+          "label": "In the Box",
+          "value": "Laptop, 65W AC adapter\n4 cell, 80Wh internal battery\nQuick start guide"
+        }
+      ],
+      "d5": {
+        "d5_batteryCondition": "Good",
+        "d5_batteryValue": 80,
+        "d5_securityCondition": "Needs update",
+        "d5_securityScore": 60,
+        "d5_temperatureStatus": "Normal",
+        "d5_temperatureValue": 80
+      },
+      "d6": [
+        {
+          "type": "chassi",
+          "label": "Chassi",
+          "value": 23.31
+        },
+        {
+          "type": "ssd",
+          "label": "SSD",
+          "value": 26.64
+        },
+        {
+          "type": "psu",
+          "label": "PSU",
+          "value": 26.41
+        },
+        {
+          "type": "battery",
+          "label": "Battery",
+          "value": 6.66
+        },
+        {
+          "type": "mainboard",
+          "label": "Mainboard",
+          "value": 46.62
+        },
+        {
+          "type": "display",
+          "label": "Display",
+          "value": 129.87
+        },
+        {
+          "type": "transport",
+          "label": "Transport",
+          "value": 23.31
+        },
+        {
+          "type": "usage",
+          "label": "Usage",
+          "value": 53.28
+        }
+      ],
+      "d7": {
+        "d7_purchaseDate": "2019-06-20",
+        "d7_purchaseTime": "17:43",
+        "d7_seller": "Company",
+        "d7_sellerImage": "icons/seller.png",
+        "d7_amount": "11 999 SEK"
+      },
+      "d8": {
+        "d8_guide": true
+      },
+
+      "d9": {
+        "d9_idleConsumption": 12.49,
+        "d9_peakConsumption": 90,
+        "d9_refConsumption": 100
+      },
+      "d10": [
+        {
+          "d10_factoryId": "china1",
+          "d10_factoryName": "Assembly 1",
+          "d10_factoryCountry": "China",
+          "d10_factoryCity": "Wuhan",
+          "d10_factoryAddress": "1 Tiantan E Rd,\n Dongcheng, China,\n 100061",
+          "d10_medianSalary": 500,
+          "d10_25thPercentileSalary": 300,
+          "d10_75thPercentileSalary": 630,
+          "d10_minimumWage": 295
+        },
+        {
+          "d10_factoryId": "taiwan1",
+          "d10_factoryName": "Assembly 2",
+          "d10_factoryCountry": "Taiwan",
+          "d10_factoryCity": "Taipei",
+          "d10_factoryAddress": "",
+          "d10_medianSalary": 900,
+          "d10_25thPercentileSalary": 300,
+          "d10_75thPercentileSalary": 630,
+          "d10_minimumWage": 295
+        },
+        {
+          "d10_factoryId": "japan1",
+          "d10_factoryName": "Circuits",
+          "d10_factoryCountry": "Japan",
+          "d10_factoryCity": "Osaka",
+          "d10_factoryAddress": "",
+          "d10_medianSalary": 1200,
+          "d10_25thPercentileSalary": 300,
+          "d10_75thPercentileSalary": 630,
+          "d10_minimumWage": 295
+        }
+      ],
+      "d11": [
+        {
+          "d11_manufacturingDate": "2019-04-12",
+          "d11_icon": "parts/display-icon.png",
+          "d11_part": "Display",
+          "d11_value": "14” WQHD IPS",
+          "d11_screenSize": null,
+          "d11_dimensions": null,
+          "d11_voltage": null,
+          "d11_current": null,
+          "d11_energyConsumption": null,
+          "d11_clockSpeed": null,
+          "d11_cost": null
+        },
+        {
+          "d11_manufacturingDate": "2019-04-12",
+          "d11_icon": "parts/battery-icon.png",
+          "d11_part": "Power adapter",
+          "d11_value": "12V",
+          "d11_screenSize": null,
+          "d11_dimensions": null,
+          "d11_voltage": "12V",
+          "d11_current": "4.5A",
+          "d11_energyConsumption": null,
+          "d11_clockSpeed": null,
+          "d11_cost": null
+        },
+        {
+          "d11_manufacturingDate": "2019-04-12",
+          "d11_icon": "parts/cpu-icon.png",
+          "d11_part": "Circuit",
+          "d11_value": "Motherboard",
+          "d11_screenSize": null,
+          "d11_dimensions": null,
+          "d11_voltage": null,
+          "d11_current": null,
+          "d11_energyConsumption": null,
+          "d11_clockSpeed": null,
+          "d11_cost": null
+        }
+      ],
+      "d12": {
+        "d12_energyConsumption": 11365,
+        "d12_renewableEnergy": 4197.3
+      },
+      "d13": [
+        {
+          "d13_factoryId": "china1",
+          "d13_factoryName": "Assembly China",
+          "d13_workerSatisfactionScore": 3
+        },
+        {
+          "d13_factoryId": "taiwan1",
+          "d13_factoryName": "Assembly Taiwan",
+          "d13_workerSatisfactionScore": 4
+        },
+        {
+          "d13_factoryId": "japan1",
+          "d13_factoryName": "Assembly Japan",
+          "d13_workerSatisfactionScore": 3
+        }
+      ],
+      "d14": [
+        {
+          "d14_typeOfRepair": "Battery Replacement",
+          "d14_difficulty": "Easy",
+          "d14_link": "https://www.ifixit.com/",
+          "d14_image": "battery-replacement.png"
+        },
+        {
+          "d14_typeOfRepair": "Keyboard Replacement",
+          "d14_difficulty": "Moderate",
+          "d14_link": "https://www.ifixit.com/",
+          "d14_image": "keyboard-replacement.png"
+        }
+      ],
+      "d15": {
+        "d15_recycledMetals": 20,
+        "d15_postConsumerRecycledPlastic": 16,
+        "d15_postIndustryRecycledPlastic": 34
+      },
+      "d16": {
+        "d16_recyclingIndexScore": "D",
+        "d16_materialRecoveryRate": 36
+      },
+      "d17": [
+        {
+          "d17_contentType": "Plastic",
+          "d17_name": "Polycarbonate (PC)",
+          "d17_amount": 300,
+          "d17_percentage": null
+        },
+        {
+          "d17_contentType": "Metal",
+          "d17_name": "Magnesium (Mg)",
+          "d17_amount": 1000,
+          "d17_percentage": null
+        },
+        {
+          "d17_contentType": "Flame Retardant",
+          "d17_name": "Aluminium hydroxide (ATH)",
+          "d17_amount": 23,
+          "d17_percentage": null
+        },
+        {
+          "d17_contentType": "Plastic",
+          "d17_name": "Acrylonitrile Butadiene Styrene (ABS)",
+          "d17_amount": 256,
+          "d17_percentage": null
+        }
+      ],
+      "d18": {
+        "d18_rbaMembership": false,
+        "d18_codeOfConduct": "https://www.dustingroup.com/en/business-ethics-and-anti-corruption",
+        "d18_followUpPolicy": "https://www.dustingroup.com/en/responsible-manufacturing"
+      },
+      "d19": {
+        "d19_transparencyRate": 47
+      },
+      "d20": [
+        {
+          "d20_event": "Sold",
+          "d20_date": "2019-06-20",
+          "d20_location": "Stockholm, Sweden",
+          "d20_registeredBy": "Company",
+          "d20_eventImage": "icons/seller.png"
+        },
+        {
+          "d20_event": "Distributor",
+          "d20_date": "2019-06-12",
+          "d20_location": "Stockholm, Sweden",
+          "d20_registeredBy": "Company",
+          "d20_eventImage": "icons/distributor.png"
+        },
+        {
+          "d20_event": "Import",
+          "d20_date": "2019-06-07",
+          "d20_location": "Stockholm, Sweden",
+          "d20_registeredBy": "Company",
+          "d20_eventImage": "icons/importer.png"
+        },
+        {
+          "d20_event": "Shipping",
+          "d20_date": "2019-06-04",
+          "d20_location": "Beijing, China",
+          "d20_registeredBy": "Company",
+          "d20_eventImage": "icons/shipping.png"
+        },
+        {
+          "d20_event": "Manufacturing",
+          "d20_date": "2019-05-31",
+          "d20_location": "Laptop factory, Beijing, China",
+          "d20_registeredBy": "Laptop Manufacturer",
+          "d20_eventImage": "icons/manufacturer.png"
+        }
+      ],
+      "d21": {
+        "d21_warrantyExpirationDate": "2021-08-15",
+        "d21_warrantyTime": "3 years"
+      },
+      "d22": {
+        "d22_keepScore": 88,
+        "d22_categoryPosition": 5,
+        "d22_durability": 90,
+        "d22_repairability": 85,
+        "d22_energyEfficiency": 95,
+        "d22_socialConditions": 78,
+        "d22_recyclability": 89
+      },
+      "d23": [
+        {
+          "d23_name": "Company",
+          "d23_description": "The official service center for laptops in Sweden.",
+          "d23_image": "icons/service.png"
+        },
+        {
+          "d23_name": "Company",
+          "d23_description": "The official service center for laptops in Sweden.",
+          "d23_image": "icons/service.png"
+        }
+      ],
+      "d24": {
+        "d24_today": 2.43,
+        "d24_dailyAvg": 2.1
+      },
+      "d25": [
+        {
+          "d25_collectorName": "Company",
+          "d25_collectorDistanceTEMP": "800 m",
+          "d25_image": "icons/endofuse.png",
+          "d25LatLng": [57.7028034, 11.9622522]
+        },
+        {
+          "d25_collectorName": "Company",
+          "d25_collectorDistanceTEMP": "3,4 km",
+          "d25_image": "icons/endofuse.png",
+          "d25LatLng": [57.6576369, 11.9455256]
+        },
+        {
+          "d25_collectorName": "Company",
+          "d25_collectorDistanceTEMP": "4,2 km",
+          "d25_image": "icons/endofuse.png",
+          "d25LatLng": [57.7320644, 12.0475075]
+        }
+      ],
+      "d26": [
+        {
+          "d26_supplierName": "Company",
+          "d26_supplierCountry": "China",
+          "d26_supplierCity": "Ganzhou",
+          "d26_supplierType": "Parts",
+          "d26_supplierTier": "Tier 2",
+          "d26_supplierOf": "LM317 voltage regulator",
+          "d26_latestAudit": "2019-04-02",
+          "d26_supplierRating": "2 stars",
+          "d26_image": "icons/distributor.png",
+          "d26LatLng": [25.836828, 114.9053189]
+        },
+        {
+          "d26_supplierName": "Company",
+          "d26_supplierCountry": "China",
+          "d26_supplierCity": "Changsha",
+          "d26_supplierType": "Smelter",
+          "d26_supplierTier": "Tier 2",
+          "d26_supplierOf": "Tungsten",
+          "d26_latestAudit": "2019-08-16",
+          "d26_supplierRating": "3 stars",
+          "d26_image": "icons/distributor.png",
+          "d26LatLng": [27.3768644, 110.405039]
+        }
+      ]
+    }
   }
 }
