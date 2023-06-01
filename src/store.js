@@ -6,6 +6,7 @@ import D27QO from "./data/D27QO.json";
 import CO443726 from "./data/CO443726.json";
 import X1YOGA from "./data/X1YOGA.json";
 import LightSpeaker from "./data/LightSpeaker.json";
+import axios from "axios";
 
 const parseImgPath = (image) => require(`@/assets/${image}`);
 const productData = {
@@ -70,7 +71,8 @@ const state = {
   isOnboardingModalActive: false,
   mobileSidebarActive: false,
   roles,
-  products: productData,
+  //products: productData,
+  products: [],
 };
 
 const mutations = make.mutations(state);
@@ -96,11 +98,66 @@ const store = new Vuex.Store({
       }
       state.gUIdeElements = [...state.gUIdeElements];
     },
+    SET_PRODUCTS(state, products) {
+      state.products = products;
+    },
   },
   actions: {
     addGUIdeElement({ commit, state }, elementData) {
       commit("ADD_GUIDE_ELEMENT", elementData);
     },
+    async fetchProducts({ commit }, address) {
+      try {
+        const data = await axios.get(
+          "http://node.alpha.obada.io:1317/obada-foundation/fullcore/nft/" + address + "/all"
+        );
+
+        const products = []
+
+        for (const asset of data.data.NFT){
+          let product = productData[""]
+
+          const data = await axios.get(
+            "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
+          );
+
+          for (const obj in didDoc.document.metadata.objects) {
+            switch (obj.metadata.type) {
+              case "physicalAssetIdentifiers":
+               // obj.url 
+
+                const physicalAssetIdentifiers = await axios.get(
+                  "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
+                );
+
+                break;
+            }
+          }
+
+         // const physicalAssetIdentifier = await axios.get(
+         //   
+         // );
+
+          let didDoc = data.data
+          product.data.did = didDoc.document.id
+          product.data.usn = asset.data.usn
+          product.data.checksum = asset.uri_hash
+
+          console.log(didDoc.document.metadata.objects)
+
+          products.push(product)
+        }
+
+        commit("SET_PRODUCTS", products);
+      } catch (error) {
+        alert(error);
+        console.log(error);
+      }
+    },
+
+  },
+  getters: {
+    getProducts: (state) => state.products,
   },
   plugins: [pathify.plugin],
 });
