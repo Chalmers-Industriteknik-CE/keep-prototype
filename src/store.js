@@ -121,29 +121,41 @@ const store = new Vuex.Store({
             "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
           );
 
-          for (const obj in didDoc.document.metadata.objects) {
-            switch (obj.metadata.type) {
-              case "physicalAssetIdentifiers":
-               // obj.url 
-
-                const physicalAssetIdentifiers = await axios.get(
-                  "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
-                );
-
-                break;
-            }
-          }
-
-         // const physicalAssetIdentifier = await axios.get(
-         //   
-         // );
-
-          let didDoc = data.data
-          product.data.did = didDoc.document.id
+          let didDoc = data.data.document
+          product.data.did = didDoc.id
           product.data.usn = asset.data.usn
           product.data.checksum = asset.uri_hash
 
-          console.log(didDoc.document.metadata.objects)
+          for (const obj in didDoc.metadata.objects) {
+            switch (didDoc.metadata.objects[obj].metadata.type) {
+              case "physicalAssetIdentifiers": {
+                  const ipfsHash = didDoc.metadata.objects[obj].url.split("://")[1]
+                  const physicalAssetIdentifiers = await axios.get(
+                    "https://ipfs.alpha.obada.io:8080/ipfs/" + ipfsHash
+                  );
+
+                  console.log(physicalAssetIdentifiers)
+
+                  break;
+                }
+
+                case "physicalAssetIdentifiers1": {  
+                   const physicalAssetIdentifiers1 = await axios.get(
+                     "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
+                   );
+   
+                   break;
+                }
+
+                case "physicalAssetIdentifiers2": {
+                    const physicalAssetIdentifiers2 = await axios.get(
+                      "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
+                    );
+    
+                    break;
+                }
+            }
+          }
 
           products.push(product)
         }

@@ -158,7 +158,8 @@ export default {
   },
   created() {
     if (!this.currentRole) this.$router.push({ path: "/" });
-    this.currentProduct = this.$route.params.id;
+    this.$store.dispatch("fetchProducts", this.$route.params.id)
+    this.currentProduct = 0;
     if (!this.product) this.$router.push({ path: "/" });
     if (!this.isOnboardingModalActive) this.gUIdeActive = true;
   },

@@ -35,11 +35,15 @@ export default {
   },
   methods: {
     doImport() {
+      if (this.account === '') {
+        return '';
+      }
+      
       this.isLoading = true;
       setTimeout(() => {
         this.$router.push({
           name: 'product',
-          params: { id: '123456' },
+          params: { id: this.account },
         });
       }, 1000);
     }
