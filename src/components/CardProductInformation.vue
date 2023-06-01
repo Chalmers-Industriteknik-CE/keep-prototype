@@ -14,7 +14,7 @@
           </div>
           <div class="column">
             <DataItem label="Manufacturer" :data="productData.d0_brand">
-              <img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />
+              <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
               <p class="text-body">{{ productData.d0_brand }}</p>
             </DataItem>
             <DataItem label="Model" :data="productData.d0_modelId">{{ productData.d0_modelId }}</DataItem>

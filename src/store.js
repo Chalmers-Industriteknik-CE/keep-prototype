@@ -127,22 +127,23 @@ const store = new Vuex.Store({
           product.data.checksum = asset.uri_hash
 
           for (const obj in didDoc.metadata.objects) {
+            const ipfsHash = didDoc.metadata.objects[obj].url.split("://")[1]
+            const ipfsUrl = "https://ipfs.alpha.obada.io:8080/ipfs/" + ipfsHash
+
             switch (didDoc.metadata.objects[obj].metadata.type) {
               case "physicalAssetIdentifiers": {
-                  const ipfsHash = didDoc.metadata.objects[obj].url.split("://")[1]
-                  const physicalAssetIdentifiers = await axios.get(
-                    "https://ipfs.alpha.obada.io:8080/ipfs/" + ipfsHash
-                  );
-
-                  console.log(physicalAssetIdentifiers)
+                  const ipfsDoc = await axios.get(ipfsUrl); 
+                  product.manufacturer = ipfsDoc.data.manufacturer
+                  product.data.d0_brand = ipfsDoc.data.manufacturer
+                  product.data.d0_serialNumber = ipfsDoc.data.serial_number
+                  product.data.d0_modelId = ipfsDoc.data.part_number
 
                   break;
                 }
 
-                case "physicalAssetIdentifiers1": {  
-                   const physicalAssetIdentifiers1 = await axios.get(
-                     "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
-                   );
+                case "mainImage": {
+                   product.image = ipfsUrl
+                   product.data.d0_product_image = ipfsUrl
    
                    break;
                 }
