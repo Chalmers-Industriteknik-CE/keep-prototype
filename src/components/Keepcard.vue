@@ -29,6 +29,7 @@
         </template>
       </b-tooltip>
     </div>
+
     <CardWarranty v-if="card == 0" :cardData="productData.d21" />
     <CardResellValue v-if="card == 1" :cardData="productData.d1" />
     <CardCertificates v-if="card == 2" :cardData="productData.d2" />
@@ -364,6 +365,10 @@ export default {
     };
   },
   computed: {
+    cards() {
+      let currentProduct = this.$store.state.currentProduct;
+      return this.$store.state.products[currentProduct].documents;
+    },
     productData() {
       let currentProduct = this.$store.state.currentProduct;
       return this.$store.state.products[currentProduct].data;

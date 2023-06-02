@@ -1,63 +1,90 @@
 <template>
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">Product Information</p>
-    </header>
+  <div>
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">Product Information</p>
+      </header>
 
-    <div class="card-content">
-      <div class="content">
-        <div class="columns">
-          <div class="column">
-            <figure class="image product">
-              <img :src="productData.d0_product_image" :alt="productData.d0_modelId" />
-            </figure>
+      <div class="card-content">
+        <div class="content">
+          <div class="columns">
+            <div class="column">
+              <figure class="image product">
+                <img :src="image" :alt="product.data.d0_modelId" />
+              </figure>
+            </div>
+            <div class="column">
+              <DataItem label="Manufacturer" :data="product.manufacturer">
+                <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
+                <p class="text-body">{{ product.manufacturer }}</p>
+              </DataItem>
+              <DataItem label="Model" :data="product.data.d0_modelId">{{ product.data.d0_modelId }}</DataItem>
+              <DataItem
+                label="Serial Number"
+                :data="serialNumber"
+              >{{ serialNumber }}</DataItem>
+            </div>
           </div>
-          <div class="column">
-            <DataItem label="Manufacturer" :data="productData.d0_brand">
-              <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
-              <p class="text-body">{{ productData.d0_brand }}</p>
-            </DataItem>
-            <DataItem label="Model" :data="productData.d0_modelId">{{ productData.d0_modelId }}</DataItem>
-            <DataItem
-              label="Serial Number"
-              :data="productData.d0_serialNumber"
-            >{{ productData.d0_serialNumber }}</DataItem>
+          <hr />
+          <div class="columns">
+            <div class="column">
+              <DataItem
+                label="USN"
+                :data="product.data.usn"
+              >{{ product.data.usn }}</DataItem>
+            </div>
+            <div class="column">
+              <DataItem
+                  label="DID"
+                  :data="productData.did"
+              >{{ product.data.did }}</DataItem>
+            </div>
           </div>
+          <DataItem
+              label="Checksum"
+              :data="product.data.checksum"
+          >{{ product.data.checksum }}</DataItem>
         </div>
-        <hr />
-        <div class="columns">
-          <div class="column">
-            <DataItem
-              label="USN"
-              :data="productData.usn"
-            >{{ productData.usn }}</DataItem>
-          </div>
-          <div class="column">
-            <DataItem
-                label="DID"
-                :data="productData.did"
-            >{{ productData.did }}</DataItem>
-          </div>
-        </div>
-        <DataItem
-            label="Checksum"
-            :data="productData.checksum"
-        >{{ productData.checksum }}</DataItem>
       </div>
     </div>
+
+    <CardProductObada v-for="card in documents" :key="card.hashUnencryptedObject" :cardData="card"/>
   </div>
 </template>
 
 <script>
+import CardProductObada from "@/components/CardProductObada.vue";
 import DataItem from "@/components/DataItem.vue";
+import { mapState } from 'vuex'
 export default {
   name: "CardProductInformation",
-  components: { DataItem },
+  components: { DataItem, CardProductObada },
   props: {
     productData: {
       type: Object,
     },
   },
+  computed: mapState({
+    currentProduct: state => state.currentProduct,
+
+    products: state => state.products,
+
+    documents(state) {
+      return this.product.data.documents
+    },
+
+    serialNumber(state) {
+      return this.product.data.d0_serialNumber
+    },
+
+    image(state) {
+      return state.products[state.currentProduct].data.d0_product_image
+    },
+
+    product(state) {
+      return state.products[state.currentProduct]
+    }
+  })
 };
 </script>
 

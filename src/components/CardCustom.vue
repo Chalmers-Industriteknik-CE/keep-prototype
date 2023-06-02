@@ -38,7 +38,9 @@ export default {
       if (this.account === '') {
         return '';
       }
-      
+
+      this.$store.dispatch("fetchProducts", this.account)
+
       this.isLoading = true;
       setTimeout(() => {
         this.$router.push({

@@ -128,6 +128,9 @@ export default {
         case 26:
           data = this.productData.d26
           break;
+        case 27:
+          data = this.productData.d27
+          break;
         
         default:
       }

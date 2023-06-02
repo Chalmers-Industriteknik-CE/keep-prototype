@@ -18,8 +18,8 @@ const productData = {
 };
 
 Object.values(productData).map((product) => {
-  product.data.d0_product_image = parseImgPath(product.data.d0_product_image);
-  product.data.d0_brand_image = parseImgPath(product.data.d0_brand_image);
+  product.data.d0_product_image = '';
+  product.data.d0_brand_image = '';
   product.data.d2 &&
     product.data.d2.map(
       (cert) => (cert.d2_image = parseImgPath(cert.d2_image))
@@ -64,7 +64,7 @@ Object.values(productData).map((product) => {
 const state = {
   currentRole: "consumer",
   currentCategory: 0,
-  currentProduct: "PF0H268N",
+  currentProduct: 0,
   gUIdeElements: [],
   gUIdeActive: false,
   gUIdeStep: 1,
@@ -98,6 +98,9 @@ const store = new Vuex.Store({
       }
       state.gUIdeElements = [...state.gUIdeElements];
     },
+    SET_CUURENT_PRODUCT(state, currentProduct) {
+      state.currentProduct = currentProduct;
+    },
     SET_PRODUCTS(state, products) {
       state.products = products;
     },
@@ -105,6 +108,9 @@ const store = new Vuex.Store({
   actions: {
     addGUIdeElement({ commit, state }, elementData) {
       commit("ADD_GUIDE_ELEMENT", elementData);
+    },
+    async changeCurrentProduct({ commit }, currentProduct) {
+      commit("SET_CUURENT_PRODUCT", currentProduct);
     },
     async fetchProducts({ commit }, address) {
       try {
@@ -114,14 +120,16 @@ const store = new Vuex.Store({
 
         const products = []
 
-        for (const asset of data.data.NFT){
-          let product = productData[""]
+        for (let asset of data.data.NFT){
+          let product = Object.assign({}, productData[""])
 
           const data = await axios.get(
             "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
           );
 
-          let didDoc = data.data.document
+          let didDoc = Object.assign({}, data.data.document)
+          product.pId = asset.data.usn
+          product.title = asset.data.usn
           product.data.did = didDoc.id
           product.data.usn = asset.data.usn
           product.data.checksum = asset.uri_hash
@@ -137,6 +145,12 @@ const store = new Vuex.Store({
                   product.data.d0_brand = ipfsDoc.data.manufacturer
                   product.data.d0_serialNumber = ipfsDoc.data.serial_number
                   product.data.d0_modelId = ipfsDoc.data.part_number
+                  product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    obj: ipfsDoc.data
+                  })
 
                   break;
                 }
@@ -144,16 +158,23 @@ const store = new Vuex.Store({
                 case "mainImage": {
                    product.image = ipfsUrl
                    product.data.d0_product_image = ipfsUrl
+                   product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    image: ipfsUrl
+                  })
    
                    break;
                 }
 
-                case "physicalAssetIdentifiers2": {
-                    const physicalAssetIdentifiers2 = await axios.get(
-                      "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
-                    );
-    
-                    break;
+                default: {
+                  product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    link: ipfsUrl
+                  })
                 }
             }
           }
@@ -164,7 +185,6 @@ const store = new Vuex.Store({
         commit("SET_PRODUCTS", products);
       } catch (error) {
         alert(error);
-        console.log(error);
       }
     },
 
