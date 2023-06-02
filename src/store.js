@@ -115,7 +115,7 @@ const store = new Vuex.Store({
     async fetchProducts({ commit }, address) {
       try {
         const data = await axios.get(
-          "http://node.alpha.obada.io:1317/obada-foundation/fullcore/nft/" + address + "/all"
+          "https://node.alpha.obada.io/obada-foundation/fullcore/nft/" + address + "/all"
         );
 
         const products = []
