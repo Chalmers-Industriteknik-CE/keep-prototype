@@ -1,14 +1,14 @@
 <template>
   <div class="card">
     <header class="card-header">
-      <p class="card-header-title">DLT Backend</p>
+      <p class="card-header-title"></p>
     </header>
 
-    <div class="card-content">
-      <label for="account" style="display:block;margin-bottom: 0.5em;">Import Private Key</label>
-      <input id="account" class="keep-input" type="text" name="account" style="width: 100%;" placeholder="Enter Key">
-      <Button text="Import" :isLoading="isLoading"  :onclick="doImport" block />
-      <p>Import the private key to connect this demo to the Decentralized Registry storing Digital Product Passports.</p>
+    <div class="card-content" style="text-align: center;">
+      <label for="account" style="display:block;margin-bottom: 0.5em; font-weight: bold;">Enter Account Address</label>
+      <input id="account" class="keep-input" v-model="account" type="text" name="account" style="width: 100%;" placeholder="e.g. obada1z96fvpm2lpk4mnfyk8ra2qsmw4v7502cm0e4ve">
+      <Button text="Import Digital Product Passports" :isLoading="isLoading"  :onclick="doImport" block />
+      <p>All Digital Product Passports associated with this account will be download from the Decentralized Registry into this demo.</p>
     </div>
   </div>
 </template>
@@ -21,7 +21,8 @@ export default {
   props: { cardData: Array },
   data() {
     return {
-      isLoading: false
+      isLoading: false,
+      account: '',
     }
   },
   computed: {
@@ -34,11 +35,17 @@ export default {
   },
   methods: {
     doImport() {
+      if (this.account === '') {
+        return '';
+      }
+
+      this.$store.dispatch("fetchProducts", this.account)
+
       this.isLoading = true;
       setTimeout(() => {
         this.$router.push({
           name: 'product',
-          params: { id: '123456' },
+          params: { id: this.account },
         });
       }, 1000);
     }

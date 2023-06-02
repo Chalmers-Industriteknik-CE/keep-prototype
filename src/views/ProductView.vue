@@ -131,7 +131,7 @@ export default {
       return this.$store.state.roles;
     },
     product() {
-      return this.$store.state.products[this.currentProduct];
+      return this.$store.state.products[this.$store.state.currentProduct];
     },
     manufacturerId(){
       return this.product.manufacturerId;
@@ -158,7 +158,6 @@ export default {
   },
   created() {
     if (!this.currentRole) this.$router.push({ path: "/" });
-    this.currentProduct = this.$route.params.id;
     if (!this.product) this.$router.push({ path: "/" });
     if (!this.isOnboardingModalActive) this.gUIdeActive = true;
   },

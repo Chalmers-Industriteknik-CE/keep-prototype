@@ -1,5 +1,5 @@
 {
-  "123456": {
+  "": {
     "pId": "XYZ123",
     "title": "10a8a0r6sp",
     "manufacturer": "lenovo",
@@ -17,6 +17,7 @@
       "d0_manufacturingDate": "2019-05-24",
       "d0_purchaseDate": "2019-06-20",
       "d0_paidProducerResponsibilityFee": true,
+      "documents": [],
       "d1": [
         {
           "d1_reseller": "Company",
