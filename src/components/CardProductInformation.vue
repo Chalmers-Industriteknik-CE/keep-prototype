@@ -47,18 +47,15 @@
         </div>
       </div>
     </div>
-
-    <CardProductObada v-for="card in documents" :key="card.hashUnencryptedObject" :cardData="card"/>
   </div>
 </template>
 
 <script>
-import CardProductObada from "@/components/CardProductObada.vue";
 import DataItem from "@/components/DataItem.vue";
 import { mapState } from 'vuex'
 export default {
   name: "CardProductInformation",
-  components: { DataItem, CardProductObada },
+  components: { DataItem },
   props: {
     productData: {
       type: Object,

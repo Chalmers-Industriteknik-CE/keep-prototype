@@ -14,6 +14,7 @@
       "
     >
       <b-tooltip
+        v-if="cardDescription[card]"
         position="is-left"
         multilined
         type="is-light"
@@ -21,11 +22,13 @@
       >
         <span class="fs-keep-icon-regular">!info</span>
         <template #content>
-          <h2>{{ cardDescription[card].title }}</h2>
-          <p>{{ cardDescription[card].description }}</p>
-          <h2>Difficulty rating</h2>
-          <p>{{ cardDescription[card].difficulty }}</p>
-          <DifficultyRating :score="cardDescription[card].difficultyScore" />
+          <h2 v-if="cardDescription[card].title">{{ cardDescription[card].title }}</h2>
+          <p v-if="cardDescription[card].description">{{ cardDescription[card].description }}</p>
+          <div v-if="cardDescription[card].difficulty && cardDescription[card].difficultyScore">
+            <h2>Difficulty rating</h2>
+            <p>{{ cardDescription[card].difficulty }}</p>
+            <DifficultyRating :score="cardDescription[card].difficultyScore" />
+          </div>
         </template>
       </b-tooltip>
     </div>
@@ -48,14 +51,8 @@
     <CardRecycledContent v-if="card == 15" :cardData="productData.d15" />
     <CardProductRecylingIndex v-if="card == 16" :cardData="productData.d16" />
     <CardMaterials v-if="card == 17" :cardData="productData.d17" />
-    <CardCorporateResponsibility
-      v-if="card == 18"
-      :cardData="productData.d18"
-    />
-    <CardSupplyChainTransparency
-      v-if="card == 19"
-      :cardData="productData.d19"
-    />
+    <CardCorporateResponsibility v-if="card == 18" :cardData="productData.d18"/>
+    <CardSupplyChainTransparency v-if="card == 19" :cardData="productData.d19"/>
     <CardProductHistory v-if="card == 20" :cardData="productData.d20" />
     <CardProductInformation v-if="card == 21" :productData="productData" />
     <CardKeepScore v-if="card == 22" :cardData="productData.d22" />
@@ -64,6 +61,7 @@
     <CardProductUsage v-if="card == 24" :cardData="productData.d24" />
     <CardNearestCollectors v-if="card == 25" :cardData="productData.d25" />
     <CardSuppliers v-if="card == 26" :cardData="productData.d26" />
+    <CardDocuments v-if="card === 28" :documents="productData.documents" />
   </div>
 </template>
 
@@ -96,7 +94,7 @@ import CardProductUsage from "@/components/CardProductUsage.vue";
 import CardNearestCollectors from "@/components/CardNearestCollectors.vue";
 import CardSuppliers from "@/components/CardSuppliers.vue";
 import CardCustom from "@/components/CardCustom.vue";
-
+import CardDocuments from "@/components/CardDocuments.vue";
 import DifficultyRating from "@/components/DifficultyRating.vue";
 
 export default {
@@ -407,6 +405,7 @@ export default {
     CardNearestCollectors,
     CardSuppliers,
     CardCustom,
+    CardDocuments,
   },
 };
 </script>
