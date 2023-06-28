@@ -1,50 +1,48 @@
 <template>
-  <div>
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">Product Information</p>
-      </header>
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">Product Information</p>
+    </header>
 
-      <div class="card-content">
-        <div class="content">
-          <div class="columns">
-            <div class="column">
-              <figure class="image product">
-                <img :src="image" :alt="product.data.d0_modelId" />
-              </figure>
-            </div>
-            <div class="column">
-              <DataItem label="Manufacturer" :data="product.manufacturer">
-                <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
-                <p class="text-body">{{ product.manufacturer }}</p>
-              </DataItem>
-              <DataItem label="Model" :data="product.data.d0_modelId">{{ product.data.d0_modelId }}</DataItem>
-              <DataItem
-                label="Serial Number"
-                :data="serialNumber"
-              >{{ serialNumber }}</DataItem>
-            </div>
+    <div class="card-content">
+      <div class="content">
+        <div class="columns">
+          <div class="column">
+            <figure class="image product">
+              <img :src="image" :alt="product.data.d0_modelId" />
+            </figure>
           </div>
-          <hr />
-          <div class="columns">
-            <div class="column">
-              <DataItem
-                label="USN"
-                :data="product.data.usn"
-              >{{ product.data.usn }}</DataItem>
-            </div>
-            <div class="column">
-              <DataItem
-                  label="DID"
-                  :data="productData.did"
-              >{{ product.data.did }}</DataItem>
-            </div>
+          <div class="column">
+            <DataItem label="Manufacturer" :data="product.manufacturer">
+              <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
+              <p class="text-body">{{ product.manufacturer }}</p>
+            </DataItem>
+            <DataItem label="Model" :data="product.data.d0_modelId">{{ product.data.d0_modelId }}</DataItem>
+            <DataItem
+              label="Serial Number"
+              :data="serialNumber"
+            >{{ serialNumber }}</DataItem>
           </div>
-          <DataItem
-              label="Checksum"
-              :data="product.data.checksum"
-          >{{ product.data.checksum }}</DataItem>
         </div>
+        <hr />
+        <div class="columns">
+          <div class="column">
+            <DataItem
+              label="USN"
+              :data="product.data.usn"
+            >{{ product.data.usn }}</DataItem>
+          </div>
+          <div class="column">
+            <DataItem
+                label="DID"
+                :data="productData.did"
+            >{{ product.data.did }}</DataItem>
+          </div>
+        </div>
+        <DataItem
+            label="Checksum"
+            :data="product.data.checksum"
+        >{{ product.data.checksum }}</DataItem>
       </div>
     </div>
   </div>
