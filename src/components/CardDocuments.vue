@@ -4,38 +4,21 @@
           <div class="card">
           <header class="card-header">
               <p class="card-header-title">{{ document.type }}</p><br>
-  <!--            <p class="card-header-title">{{ document.description }}</p><br>-->
           </header>
           <div class="card-content">
               <div class="content">
-                  <div class="columns" v-if="document.type === 'physicalAssetIdentifiers'">
-                      <div class="column">
-                          <span class="text-uppercase">Manufacturer</span>
-                          <br /><br />
-                          <p class="text-body">{{document.obj.manufacturer}}</p>
-                      </div>
-                      <div class="column">
-                          <span class="text-uppercase">Part Number</span>
-                          <br /><br />
-                          <p class="text-body">{{document.obj.part_number}}</p>
-                      </div>
-                      <div class="column">
-                          <span class="text-uppercase">Serial Number</span>
-                          <br /><br />
-                          <p class="text-body">{{document.obj.serial_number}}</p>
-                      </div>
+                  <div v-if="document.type === 'physicalAssetIdentifiers'">
+                      <DataItem :label="'Manufacturer'" :data="document.obj.manufacturer">{{document.obj.manufacturer}}</DataItem>
+                      <DataItem :label="'Part Number'" :data="document.obj.part_number">{{document.obj.part_number}}</DataItem>
+                      <DataItem :label="'Serial Number'" :data="document.obj.serial_number">{{document.obj.serial_number}}</DataItem>
                   </div>
   
-                  <div class="columns" v-else-if="document.type === 'mainImage'">
-                      <div class="column">
-                          <img :alt="document.description" :src="document.image" width="200px" />
-                      </div>
+                  <div class="has-text-centered" v-else-if="document.type === 'mainImage'">
+                      <img :alt="document.description" :src="document.image" style="max-width: 200px;"/>
                   </div>
   
-                  <div class="columns" v-else>
-                      <div class="column">
-                          <a :href="document.link">Link to Document</a>
-                      </div>
+                  <div v-else>
+                      <a :href="document.link">Link to Document</a>
                   </div>
               </div>
           </div>
@@ -45,8 +28,11 @@
   </template>
   
   <script>
+  import DataItem from "@/components/DataItem.vue";
+
   export default {
       name: "CardDocuments",
+      components: {DataItem},
       props: {
           documents: {
               type: Array,

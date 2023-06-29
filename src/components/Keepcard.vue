@@ -139,6 +139,7 @@ export default {
         25: "is-12",
         26: "is-12",
         27: "is-4",
+        28: "is-12",
       },
       cardDescription: {
         0: {
