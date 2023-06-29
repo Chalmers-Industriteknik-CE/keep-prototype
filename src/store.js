@@ -130,6 +130,9 @@ const store = new Vuex.Store({
           let didDoc = Object.assign({}, data.data.document)
           product.pId = asset.data.usn
           product.title = asset.data.usn
+          product.did = didDoc.id
+          product.usn = asset.data.usn
+          product.checksum = asset.uri_hash
           product.data.did = didDoc.id
           product.data.usn = asset.data.usn
           product.data.checksum = asset.uri_hash
@@ -142,9 +145,17 @@ const store = new Vuex.Store({
               case "physicalAssetIdentifiers": {
                   const ipfsDoc = await axios.get(ipfsUrl); 
                   product.manufacturer = ipfsDoc.data.manufacturer
+                  product.partNumber = ipfsDoc.data.part_number
+                  product.serialNumber = ipfsDoc.data.serial_number
                   product.data.d0_brand = ipfsDoc.data.manufacturer
                   product.data.d0_serialNumber = ipfsDoc.data.serial_number
                   product.data.d0_modelId = ipfsDoc.data.part_number
+                  product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    obj: ipfsDoc.data
+                  })
                   product.data.documents.push({
                     type: didDoc.metadata.objects[obj].metadata.type,
                     name: didDoc.metadata.objects[obj].metadata.name,

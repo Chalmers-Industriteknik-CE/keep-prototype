@@ -3,7 +3,13 @@
     "pId": "XYZ123",
     "title": "10a8a0r6sp",
     "manufacturer": "lenovo",
+    "serialNumber": "",
+    "did": "",
+    "usn": "",
+    "checksum": "",
+    "partNumber": "",
     "manufacturerId": "lenovo",
+    "documents": [],
     "image": "s4h99126.jpeg",
     "data": {
       "usn": "22P6-DTCX",

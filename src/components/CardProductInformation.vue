@@ -9,7 +9,7 @@
         <div class="columns">
           <div class="column">
             <figure class="image product">
-              <img :src="image" :alt="product.data.d0_modelId" />
+              <img :src="product.image" :alt="product.partNumber" />
             </figure>
           </div>
           <div class="column">
@@ -17,11 +17,11 @@
               <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
               <p class="text-body">{{ product.manufacturer }}</p>
             </DataItem>
-            <DataItem label="Model" :data="product.data.d0_modelId">{{ product.data.d0_modelId }}</DataItem>
+            <DataItem label="Model" :data="product.partNumber">{{ product.partNumber }}</DataItem>
             <DataItem
               label="Serial Number"
-              :data="serialNumber"
-            >{{ serialNumber }}</DataItem>
+              :data="product.serialNumber"
+            >{{ product.serialNumber }}</DataItem>
           </div>
         </div>
         <hr />
@@ -29,20 +29,20 @@
           <div class="column">
             <DataItem
               label="USN"
-              :data="product.data.usn"
-            >{{ product.data.usn }}</DataItem>
+              :data="product.usn"
+            >{{ product.usn }}</DataItem>
           </div>
           <div class="column">
             <DataItem
                 label="DID"
                 :data="productData.did"
-            >{{ product.data.did }}</DataItem>
+            >{{ product.did }}</DataItem>
           </div>
         </div>
         <DataItem
             label="Checksum"
-            :data="product.data.checksum"
-        >{{ product.data.checksum }}</DataItem>
+            :data="product.checksum"
+        >{{ product.checksum }}</DataItem>
       </div>
     </div>
   </div>
