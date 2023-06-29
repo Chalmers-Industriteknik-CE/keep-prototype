@@ -47,7 +47,7 @@ export default {
           name: 'product',
           params: { id: this.account },
         });
-      }, 2000);
+      }, 3000);
     }
   }
 };
