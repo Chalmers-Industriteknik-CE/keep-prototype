@@ -1,31 +1,46 @@
 <template>
     <div style="width: 100%; display:flex;flex-wrap: wrap;">
-      <div v-for="document in documents" :key="document.id" class="keep-card tile is-4">
-          <div class="card">
-          <header class="card-header">
-              <p class="card-header-title">{{ document.type }}</p><br>
-          </header>
-          <div class="card-content">
-              <div class="content">
-                  <div v-if="document.type === 'physicalAssetIdentifiers'">
-                      <DataItem :label="'Manufacturer'" :data="document.obj.manufacturer">{{document.obj.manufacturer}}</DataItem>
-                      <DataItem :label="'Part Number'" :data="document.obj.part_number">{{document.obj.part_number}}</DataItem>
-                      <DataItem :label="'Serial Number'" :data="document.obj.serial_number">{{document.obj.serial_number}}</DataItem>
-                  </div>
-  
-                  <div class="has-text-centered" v-else-if="document.type === 'mainImage'">
-                      <img :alt="document.description" :src="document.image" style="max-width: 200px;"/>
-                  </div>
-  
-                  <div v-else>
-                      <a :href="document.link">Link to Document</a>
-                  </div>
-              </div>
-          </div>
-          </div>
-      </div>
+        <div v-for="document in documents" :key="document.id" class="keep-card tile is-4">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">{{ document.type }}</p><br>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div v-if="document.type === 'physicalAssetIdentifiers'">
+                            <DataItem :label="'Manufacturer'" :data="document.obj.manufacturer">{{ document.obj.manufacturer }}</DataItem>
+                            <DataItem :label="'Part Number'" :data="document.obj.part_number">{{ document.obj.part_number }}</DataItem>
+                            <DataItem :label="'Serial Number'" :data="document.obj.serial_number">{{ document.obj.serial_number }}</DataItem>
+                        </div>
+
+                        <div class="has-text-centered" v-else-if="document.type === 'mainImage'">
+                            <img :alt="document.description" :src="document.image" style="max-width: 200px;"/>
+                        </div>
+
+                        <div v-else>
+                            <a :href="document.link">Link to Document</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="!documents.find(e => e.type === 'mainImage')" class="keep-card tile is-4">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">mainImage</p><br>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="has-text-centered">
+                            <img alt="no image" src="@/assets/no-image.png" style="max-width: 200px;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </template>
+</template>
   
   <script>
   import DataItem from "@/components/DataItem.vue";
