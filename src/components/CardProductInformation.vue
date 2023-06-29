@@ -65,18 +65,6 @@ export default {
 
     products: state => state.products,
 
-    documents(state) {
-      return this.product.data.documents
-    },
-
-    serialNumber(state) {
-      return this.product.data.d0_serialNumber
-    },
-
-    image(state) {
-      return state.products[state.currentProduct].data.d0_product_image
-    },
-
     product(state) {
       return state.products[state.currentProduct]
     }

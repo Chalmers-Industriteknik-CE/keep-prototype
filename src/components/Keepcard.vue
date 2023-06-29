@@ -61,7 +61,7 @@
     <CardProductUsage v-if="card == 24" :cardData="productData.d24" />
     <CardNearestCollectors v-if="card == 25" :cardData="productData.d25" />
     <CardSuppliers v-if="card == 26" :cardData="productData.d26" />
-    <CardDocuments v-if="card === 28" :documents="productData.documents" />
+    <CardDocuments v-if="card === 28" :documents="product.documents" />
   </div>
 </template>
 
@@ -96,6 +96,7 @@ import CardSuppliers from "@/components/CardSuppliers.vue";
 import CardCustom from "@/components/CardCustom.vue";
 import CardDocuments from "@/components/CardDocuments.vue";
 import DifficultyRating from "@/components/DifficultyRating.vue";
+import { mapState } from 'vuex'
 
 export default {
   name: "Keepcard",
@@ -363,19 +364,29 @@ export default {
       },
     };
   },
-  computed: {
+  computed: mapState({
+    currentProduct: state => state.currentProduct,
+
+    products: state => state.products,
+
+    product(state) {
+      return state.products[state.currentProduct]
+    },
+
     cards() {
       let currentProduct = this.$store.state.currentProduct;
       return this.$store.state.products[currentProduct].documents;
     },
+
     productData() {
       let currentProduct = this.$store.state.currentProduct;
       return this.$store.state.products[currentProduct].data;
     },
+
     tileSize() {
       return this.cardSizes[this.card];
     },
-  },
+  }),
   components: {
     DifficultyRating,
     CardWarranty,

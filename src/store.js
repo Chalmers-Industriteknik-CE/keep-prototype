@@ -121,7 +121,7 @@ const store = new Vuex.Store({
         const products = []
 
         for (let asset of data.data.NFT){
-          let product = Object.assign({}, productData[""])
+          const product = Object.assign({}, productData[""])
 
           const data = await axios.get(
             "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
@@ -131,6 +131,7 @@ const store = new Vuex.Store({
           product.pId = asset.data.usn
           product.title = asset.data.usn
           product.did = didDoc.id
+          product.documents = []
           product.usn = asset.data.usn
           product.checksum = asset.uri_hash
           product.data.did = didDoc.id
@@ -169,6 +170,14 @@ const store = new Vuex.Store({
                 case "mainImage": {
                    product.image = ipfsUrl
                    product.data.d0_product_image = ipfsUrl
+
+                   product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    image: ipfsUrl
+                  })
+
                    product.data.documents.push({
                     type: didDoc.metadata.objects[obj].metadata.type,
                     name: didDoc.metadata.objects[obj].metadata.name,
@@ -180,6 +189,13 @@ const store = new Vuex.Store({
                 }
 
                 default: {
+                  product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    link: ipfsUrl
+                  })
+
                   product.data.documents.push({
                     type: didDoc.metadata.objects[obj].metadata.type,
                     name: didDoc.metadata.objects[obj].metadata.name,
@@ -192,6 +208,8 @@ const store = new Vuex.Store({
 
           products.push(product)
         }
+
+        console.log(products)
 
         commit("SET_PRODUCTS", products);
       } catch (error) {
