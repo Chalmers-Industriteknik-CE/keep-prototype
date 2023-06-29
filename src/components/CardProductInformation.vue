@@ -9,7 +9,8 @@
         <div class="columns">
           <div class="column">
             <figure class="image product">
-              <img :src="product.image" :alt="product.partNumber" />
+              <img v-if="product.image" :src="product.image" :alt="product.partNumber" />
+              <img v-else alt="no image" src="@/assets/no-image.png" />
             </figure>
           </div>
           <div class="column">

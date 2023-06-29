@@ -24,21 +24,6 @@
                 </div>
             </div>
         </div>
-
-        <div v-if="!documents.find(e => e.type === 'mainImage')" class="keep-card tile is-4">
-            <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">mainImage</p><br>
-                </header>
-                <div class="card-content">
-                    <div class="content">
-                        <div class="has-text-centered">
-                            <img alt="no image" src="@/assets/no-image.png" style="max-width: 200px;"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
   
