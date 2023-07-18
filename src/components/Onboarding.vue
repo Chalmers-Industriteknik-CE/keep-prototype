@@ -15,14 +15,14 @@
           :checked="currentRole === roleKey"
         />
       </div>
-      <div class="onboarding-container" v-else>
+<!--      <div class="onboarding-container" v-else>
         <OnboardingSlides
           :role="currentRole"
           :step="step"
           v-on:lastStep="lastStep = $event"
           v-on:stepChange="if (step !== $event) step = $event;"
         />
-      </div>
+      </div>-->
       <div class="footer-buttons"></div>
     </section>
     <footer class="modal-card-foot footer-buttons">
@@ -107,12 +107,14 @@ import { get, sync } from "vuex-pathify";
 
 export default {
   name: "OnboardingModal",
-  components: { ImageButton, OnboardingSlides, Button },
+  components: { ImageButton,
+    // OnboardingSlides,
+    Button },
   props: {},
   data() {
     return {
       step: -1,
-      lastStep: 0,
+      lastStep: -1,
     };
   },
   computed: {

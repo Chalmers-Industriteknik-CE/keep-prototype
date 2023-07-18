@@ -9,54 +9,41 @@
         <div class="columns">
           <div class="column">
             <figure class="image product">
-              <img :src="productData.d0_product_image" :alt="productData.d0_modelId" />
+              <img v-if="product.image" :src="product.image" :alt="product.partNumber" />
+              <img v-else alt="no image" src="@/assets/no-image.png" />
             </figure>
           </div>
           <div class="column">
-            <DataItem label="Manufacturer" :data="productData.d0_brand">
-              <img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />
-              <p class="text-body">{{ productData.d0_brand }}</p>
+            <DataItem label="Manufacturer" :data="product.manufacturer">
+              <!--<img class="logo-image" :src="productData.d0_brand_image" :alt="productData.d0_brand" />-->
+              <p class="text-body">{{ product.manufacturer }}</p>
             </DataItem>
-            <DataItem label="Model" :data="productData.d0_modelId">{{ productData.d0_modelId }}</DataItem>
+            <DataItem label="Model" :data="product.partNumber">{{ product.partNumber }}</DataItem>
             <DataItem
               label="Serial Number"
-              :data="productData.d0_serialNumber"
-            >{{ productData.d0_serialNumber }}</DataItem>
+              :data="product.serialNumber"
+            >{{ product.serialNumber }}</DataItem>
           </div>
         </div>
         <hr />
         <div class="columns">
           <div class="column">
             <DataItem
-              label="Manufactured"
-              :data="productData.d0_manufacturingDate"
-            >{{ productData.d0_manufacturingDate }}</DataItem>
+              label="USN"
+              :data="product.usn"
+            >{{ product.usn }}</DataItem>
           </div>
           <div class="column">
             <DataItem
-              label="Purchased"
-              :data="productData.d0_purchaseDate"
-            >{{ productData.d0_purchaseDate }}</DataItem>
+                label="DID"
+                :data="productData.did"
+            >{{ product.did }}</DataItem>
           </div>
         </div>
-
-        <div class="columns">
-          <div class="column">
-            <DataItem label="Certification" :data="productData.d2">
-              <span v-if="productData.d2">{{productData.d2.length}} active certifications</span>
-              <span v-else>-</span>
-            </DataItem>
-          </div>
-          <div class="column">
-            <DataItem
-              label="Producer Responsibility"
-              :data="productData.d0_paidProducerResponsibilityFee"
-            >
-              <img class="logo-image" src="@/assets/icons/producer.png" alt="Producer" />
-              <span>Company</span>
-            </DataItem>
-          </div>
-        </div>
+        <DataItem
+            label="Checksum"
+            :data="product.checksum"
+        >{{ product.checksum }}</DataItem>
       </div>
     </div>
   </div>
@@ -64,6 +51,7 @@
 
 <script>
 import DataItem from "@/components/DataItem.vue";
+import { mapState } from 'vuex'
 export default {
   name: "CardProductInformation",
   components: { DataItem },
@@ -72,6 +60,15 @@ export default {
       type: Object,
     },
   },
+  computed: mapState({
+    currentProduct: state => state.currentProduct,
+
+    products: state => state.products,
+
+    product(state) {
+      return state.products[state.currentProduct]
+    }
+  })
 };
 </script>
 
@@ -79,8 +76,9 @@ export default {
 @import "@/scss/global.scss";
 .image.product {
   width: 60%;
+  max-width: 200px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .logo-image {

@@ -1,10 +1,11 @@
 <template>
-  <button :class="['keep-button', type, block ? ' block':'', size]">
+  <button :class="['keep-button', type, block ? ' block':'', size, isLoading ? 'disabled' : '']" @click="onclick">
     <span
       v-if="icon && iconPosition === 'left'"
       class="button-icon fs-keep-icon-regular left"
     >{{icon}}</span>
-    <span>{{text}}</span>
+    <span v-if="isLoading">Loading...</span>
+    <span v-if="!isLoading">{{text}}</span>
     <span
       v-if="icon && iconPosition === 'right'"
       class="button-icon fs-keep-icon-regular right"
@@ -57,6 +58,9 @@
   &.is-small {
     padding: 0.75rem 1rem;
   }
+  &.disabled {
+    opacity: 0.5;
+  }
 }
 
 .keep-button.is-secondary {
@@ -87,6 +91,8 @@ export default {
     type: { type: String, default: "is-primary" },
     block: { type: Boolean, default: false },
     size: { type: String, default: "is-normal" },
+    onclick: {type: Function, default: function() {}},
+    isLoading: {type: Boolean, default: false},
   },
   data() {
     return {};

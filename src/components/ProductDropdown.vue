@@ -32,16 +32,18 @@ export default {
       return require(`@/assets/products/${image}`);
     },
     changeProduct(product) {
-      this.$router.push({ name: "product", params: { id: product.key } });
+      //this.$router.push({ name: "product", params: { id: product.key } });
+      this.$store.dispatch("changeCurrentProduct", product.key)
+      console.log(this.$store.state.currentProduct)
       this.currentProductId = product.key;
       this.mobileSidebarActive = false;
     },
     parseItem(product, key) {
       return {
         key,
-        title: product.title,
-        subTitle: product.manufacturer,
-        image: require(`@/assets/products/${product.image}`),
+        title: product.data.usn,
+        subTitle: product.title,
+        image: product.image,
       };
     },
   },

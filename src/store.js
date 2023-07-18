@@ -6,19 +6,20 @@ import D27QO from "./data/D27QO.json";
 import CO443726 from "./data/CO443726.json";
 import X1YOGA from "./data/X1YOGA.json";
 import LightSpeaker from "./data/LightSpeaker.json";
+import axios from "axios";
 
 const parseImgPath = (image) => require(`@/assets/${image}`);
 const productData = {
   ...products,
-  D27QO,
-  CO443726,
-  X1YOGA,
-  LightSpeaker,
+  // D27QO,
+  // CO443726,
+  // X1YOGA,
+  // LightSpeaker,
 };
 
 Object.values(productData).map((product) => {
-  product.data.d0_product_image = parseImgPath(product.data.d0_product_image);
-  product.data.d0_brand_image = parseImgPath(product.data.d0_brand_image);
+  product.data.d0_product_image = '';
+  product.data.d0_brand_image = '';
   product.data.d2 &&
     product.data.d2.map(
       (cert) => (cert.d2_image = parseImgPath(cert.d2_image))
@@ -63,14 +64,15 @@ Object.values(productData).map((product) => {
 const state = {
   currentRole: "consumer",
   currentCategory: 0,
-  currentProduct: "PF0H268N",
+  currentProduct: 0,
   gUIdeElements: [],
   gUIdeActive: false,
   gUIdeStep: 1,
   isOnboardingModalActive: false,
   mobileSidebarActive: false,
   roles,
-  products: productData,
+  //products: productData,
+  products: [],
 };
 
 const mutations = make.mutations(state);
@@ -96,11 +98,128 @@ const store = new Vuex.Store({
       }
       state.gUIdeElements = [...state.gUIdeElements];
     },
+    SET_CUURENT_PRODUCT(state, currentProduct) {
+      state.currentProduct = currentProduct;
+    },
+    SET_PRODUCTS(state, products) {
+      state.products = products;
+    },
   },
   actions: {
     addGUIdeElement({ commit, state }, elementData) {
       commit("ADD_GUIDE_ELEMENT", elementData);
     },
+    async changeCurrentProduct({ commit }, currentProduct) {
+      commit("SET_CUURENT_PRODUCT", currentProduct);
+    },
+    async fetchProducts({ commit }, address) {
+      try {
+        const data = await axios.get(
+          "https://node.alpha.obada.io/obada-foundation/fullcore/nft/" + address + "/all"
+        );
+
+        const products = []
+
+        for (let asset of data.data.NFT){
+          const product = Object.assign({}, productData[""])
+
+          const data = await axios.get(
+            "https://registry.beta.obada.io/api/v1.0/diddoc/" + asset.id
+          );
+
+          let didDoc = Object.assign({}, data.data.document)
+          product.pId = asset.data.usn
+          product.title = asset.data.usn
+          product.did = didDoc.id
+          product.documents = []
+          product.usn = asset.data.usn
+          product.checksum = asset.uri_hash
+          product.data.did = didDoc.id
+          product.data.usn = asset.data.usn
+          product.data.checksum = asset.uri_hash
+
+          for (const obj in didDoc.metadata.objects) {
+            const ipfsHash = didDoc.metadata.objects[obj].url.split("://")[1]
+            const ipfsUrl = "https://ipfs.alpha.obada.io:8080/ipfs/" + ipfsHash
+
+            switch (didDoc.metadata.objects[obj].metadata.type) {
+              case "physicalAssetIdentifiers": {
+                  const ipfsDoc = await axios.get(ipfsUrl); 
+                  product.manufacturer = ipfsDoc.data.manufacturer
+                  product.partNumber = ipfsDoc.data.part_number
+                  product.serialNumber = ipfsDoc.data.serial_number
+                  product.data.d0_brand = ipfsDoc.data.manufacturer
+                  product.data.d0_serialNumber = ipfsDoc.data.serial_number
+                  product.data.d0_modelId = ipfsDoc.data.part_number
+                  product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    obj: ipfsDoc.data
+                  })
+                  product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    obj: ipfsDoc.data
+                  })
+
+                  break;
+                }
+
+                case "mainImage": {
+                   product.image = ipfsUrl
+                   product.data.d0_product_image = ipfsUrl
+
+                   product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    image: ipfsUrl
+                  })
+
+                   product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    image: ipfsUrl
+                  })
+   
+                   break;
+                }
+
+                default: {
+                  product.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    link: ipfsUrl
+                  })
+
+                  product.data.documents.push({
+                    type: didDoc.metadata.objects[obj].metadata.type,
+                    name: didDoc.metadata.objects[obj].metadata.name,
+                    description: didDoc.metadata.objects[obj].metadata.type,
+                    link: ipfsUrl
+                  })
+                }
+            }
+          }
+
+          products.push(product)
+        }
+
+        console.log(products)
+
+        commit("SET_PRODUCTS", products);
+      } catch (error) {
+        alert(error);
+      }
+    },
+
+  },
+  getters: {
+    getProducts: (state) => state.products,
   },
   plugins: [pathify.plugin],
 });

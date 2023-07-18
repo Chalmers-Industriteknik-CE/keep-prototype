@@ -79,7 +79,7 @@
         aria-role="dialog"
         aria-modal
       >
-        <QrComponent :link="getProductQrLink()" />
+        <QrComponent :usn="usn" :link="getProductQrLink()" />
       </b-modal>
     </div>
   </div>
@@ -131,10 +131,13 @@ export default {
       return this.$store.state.roles;
     },
     product() {
-      return this.$store.state.products[this.currentProduct];
+      return this.$store.state.products[this.$store.state.currentProduct];
     },
     manufacturerId(){
       return this.product.manufacturerId;
+    },
+    usn(){
+      return this.product.data.usn;
     },
     gUIdeActive: sync("gUIdeActive"),
     currentCategory: sync("currentCategory"),
@@ -155,7 +158,6 @@ export default {
   },
   created() {
     if (!this.currentRole) this.$router.push({ path: "/" });
-    this.currentProduct = this.$route.params.id;
     if (!this.product) this.$router.push({ path: "/" });
     if (!this.isOnboardingModalActive) this.gUIdeActive = true;
   },
