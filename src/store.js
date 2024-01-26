@@ -120,7 +120,7 @@ const store = new Vuex.Store({
 
         const products = []
 
-        for (let asset of data.data.NFT){
+        for (let asset of data.data.nft){
           const product = Object.assign({}, productData[""])
 
           const data = await axios.get(
