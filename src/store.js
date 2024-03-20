@@ -140,7 +140,7 @@ const store = new Vuex.Store({
 
           for (const obj in didDoc.metadata.objects) {
             const ipfsHash = didDoc.metadata.objects[obj].url.split("://")[1]
-            const ipfsUrl = "https://ipfs.alpha.obada.io:8080/ipfs/" + ipfsHash
+            const ipfsUrl = "https://ipfs.alpha.obada.io/ipfs/" + ipfsHash
 
             switch (didDoc.metadata.objects[obj].metadata.type) {
               case "physicalAssetIdentifiers": {
